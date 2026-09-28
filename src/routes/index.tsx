@@ -25,8 +25,6 @@ export const Route = createFileRoute("/")({
         content:
           "Founder of Samsy Wellness Network and Samsy Uni Private Limited. International athlete, mentor and entrepreneur.",
       },
-      { property: "og:image", content: `https://lovable.dev${portraitVest.url}` },
-      { name: "twitter:image", content: `https://lovable.dev${portraitVest.url}` },
     ],
   }),
   component: Home,
