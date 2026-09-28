@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote } from "lucide-react";
-import portraitVest from "@/assets/portrait-vest.png.asset.json";
+import portraitVest from "@/assets/pradip-jadhav.png";
 import { Counter } from "@/components/Counter";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -69,13 +69,15 @@ function Home() {
 
           <Reveal delay={120} className="relative">
             <div className="absolute -inset-4 -z-10 rounded-sm bg-gold-soft blur-3xl" />
-            <div className="zoom-frame relative rounded-sm border border-gold/30 shadow-[var(--shadow-luxe)]">
+
+            <div className="zoom-frame relative overflow-hidden rounded-sm border border-gold/30 shadow-[var(--shadow-luxe)]">
               <img
-                src={portraitVest.url}
+                src={portraitVest}
                 alt="Portrait of Pradip Divansing Jadhav"
                 loading="eager"
                 className="aspect-4/5 w-full object-cover object-top"
               />
+
               <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background/70 via-transparent to-transparent" />
             </div>
           </Reveal>

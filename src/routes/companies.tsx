@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import portraitAthlete from "@/assets/portrait-athlete.png.asset.json";
+import portraitAthlete from "@/assets/pradip-jadhav-athlete.png";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { companies } from "@/data/site";
@@ -101,7 +101,7 @@ function Companies() {
           <Reveal delay={120}>
             <div className="zoom-frame rounded-sm border border-gold/25 shadow-[var(--shadow-luxe)]">
               <img
-                src={portraitAthlete.url}
+                src={portraitAthlete}
                 alt="Pradip Divansing Jadhav in Samsy Wellness Network apparel"
                 loading="lazy"
                 className="aspect-4/5 w-full object-cover object-top"

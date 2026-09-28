@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portraitSuit from "@/assets/portrait-suit.png.asset.json";
+import portraitSuit from "@/assets/pradip-jadhav-suit.png";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -61,7 +61,7 @@ function About() {
         <Reveal className="relative">
           <div className="zoom-frame rounded-sm border border-gold/25 shadow-[var(--shadow-luxe)]">
             <img
-              src={portraitSuit.url}
+              src={portraitSuit}
               alt="Pradip Divansing Jadhav in a formal suit"
               loading="lazy"
               className="aspect-4/5 w-full object-cover object-top"
