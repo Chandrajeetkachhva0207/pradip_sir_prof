@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — premium executive portfolio.
+ * Design system — premium executive founder portfolio.
  * Midnight navy dominant, champagne gold accent, warm ivory contrast.
- * All colors are oklch tokens; never hardcode colors in components.
+ * High-end luxury typography, glassmorphism, soft metallic glows.
  */
 
 @theme inline {
@@ -16,7 +16,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-3xl: calc(var(--radius) + 16px);
 
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Manrope", system-ui, sans-serif;
@@ -37,6 +37,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
+  --color-gold-glow: var(--gold-glow);
   --color-ivory: var(--ivory);
   --color-ivory-foreground: var(--ivory-foreground);
   --color-destructive: var(--destructive);
@@ -47,58 +48,73 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.5rem;
 
-  /* Midnight Navy #07152E */
-  --background: oklch(0.192 0.048 262.5);
+  /* Midnight Navy #071328 */
+  --background: oklch(0.185 0.048 262.5);
   /* White #F8FAFC */
   --foreground: oklch(0.984 0.003 247.858);
-  /* Deep Royal Navy #16345C */
-  --card: oklch(0.324 0.069 257.5);
+  /* Deep Royal Navy #132B4F */
+  --card: oklch(0.245 0.055 260 / 65%);
   --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.324 0.069 257.5);
+  --popover: oklch(0.22 0.05 260);
   --popover-foreground: oklch(0.984 0.003 247.858);
 
   --primary: oklch(0.742 0.096 87.5);
-  --primary-foreground: oklch(0.192 0.048 262.5);
-  --secondary: oklch(0.324 0.069 257.5);
+  --primary-foreground: oklch(0.185 0.048 262.5);
+  --secondary: oklch(0.28 0.06 258);
   --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.262 0.055 260);
-  /* Muted Blue Gray #AAB5C5 */
+  --muted: oklch(0.24 0.045 260);
+  /* Muted Blue Gray #A6B4C8 */
   --muted-foreground: oklch(0.769 0.024 255);
   --accent: oklch(0.742 0.096 87.5);
-  --accent-foreground: oklch(0.192 0.048 262.5);
+  --accent-foreground: oklch(0.185 0.048 262.5);
 
-  /* Champagne Gold #C9A64E */
-  --gold: oklch(0.742 0.096 87.5);
-  --gold-soft: oklch(0.742 0.096 87.5 / 18%);
-  /* Warm Ivory #F7F3E8 */
-  --ivory: oklch(0.966 0.017 92);
-  --ivory-foreground: oklch(0.24 0.05 262);
+  /* Champagne Gold #D4AF37 / #C9A64E */
+  --gold: oklch(0.76 0.105 87.5);
+  --gold-soft: oklch(0.76 0.105 87.5 / 16%);
+  --gold-glow: oklch(0.76 0.105 87.5 / 35%);
+  /* Warm Ivory #FAF8F5 */
+  --ivory: oklch(0.975 0.015 92);
+  --ivory-foreground: oklch(0.22 0.045 262);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.742 0.096 87.5 / 16%);
-  --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.742 0.096 87.5 / 50%);
+  --border: oklch(0.76 0.105 87.5 / 18%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.76 0.105 87.5 / 45%);
 
   --gradient-hero: radial-gradient(
-      circle at 20% 15%,
-      oklch(0.324 0.069 257.5 / 70%),
+      circle at 18% 12%,
+      oklch(0.32 0.07 258 / 50%),
       transparent 55%
     ),
-    radial-gradient(circle at 85% 10%, oklch(0.742 0.096 87.5 / 12%), transparent 45%);
+    radial-gradient(circle at 85% 15%, oklch(0.76 0.105 87.5 / 14%), transparent 48%),
+    radial-gradient(circle at 50% 80%, oklch(0.25 0.06 255 / 35%), transparent 60%);
+
   --gradient-gold: linear-gradient(
-    100deg,
-    oklch(0.68 0.08 82),
-    oklch(0.82 0.11 92),
-    oklch(0.68 0.08 82)
+    115deg,
+    oklch(0.70 0.09 80),
+    oklch(0.85 0.12 94),
+    oklch(0.72 0.10 82)
   );
-  --shadow-luxe: 0 30px 70px -40px oklch(0 0 0 / 80%);
-  --shadow-gold: 0 20px 60px -30px oklch(0.742 0.096 87.5 / 45%);
+
+  --gradient-card: linear-gradient(
+    165deg,
+    oklch(0.27 0.06 258 / 75%),
+    oklch(0.20 0.045 262 / 85%)
+  );
+
+  --shadow-luxe: 0 25px 60px -25px oklch(0 0 0 / 75%), 0 0 0 1px oklch(0.76 0.105 87.5 / 14%);
+  --shadow-gold: 0 20px 50px -20px oklch(0.76 0.105 87.5 / 40%), 0 0 0 1px oklch(0.76 0.105 87.5 / 45%);
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
   * {
     border-color: var(--color-border);
   }
@@ -108,6 +124,7 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   h1,
@@ -117,19 +134,20 @@
   blockquote {
     font-family: var(--font-display);
     font-weight: 500;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background: oklch(0.76 0.105 87.5 / 35%);
+    color: #ffffff;
   }
 }
 
 @utility surface-card {
-  background: linear-gradient(
-    160deg,
-    oklch(0.324 0.069 257.5 / 55%),
-    oklch(0.24 0.05 262 / 45%)
-  );
+  background: var(--gradient-card);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-luxe);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(12px);
   transition:
     transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     border-color 0.4s ease,
@@ -137,9 +155,16 @@
 
   &:hover {
     transform: translateY(-4px);
-    border-color: oklch(0.742 0.096 87.5 / 45%);
+    border-color: oklch(0.76 0.105 87.5 / 45%);
     box-shadow: var(--shadow-gold);
   }
+}
+
+@utility glass-card {
+  background: oklch(0.24 0.05 260 / 55%);
+  border: 1px solid oklch(0.76 0.105 87.5 / 18%);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px -15px oklch(0 0 0 / 60%);
 }
 
 @utility gold-text {
@@ -156,10 +181,14 @@
 }
 
 @utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.72rem;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--color-gold);
+  font-weight: 600;
 }
 
 @utility hero-glow {
@@ -179,7 +208,7 @@
     transform: scaleX(0);
     transform-origin: right;
     background: var(--gradient-gold);
-    transition: transform 0.35s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   &:hover::after {
@@ -196,14 +225,14 @@
   }
 
   &:hover img {
-    transform: scale(1.06);
+    transform: scale(1.05);
   }
 }
 
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(28px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -211,6 +240,56 @@
   }
 }
 
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 oklch(0.76 0.105 87.5 / 40%);
+  }
+  50% {
+    box-shadow: 0 0 0 12px oklch(0.76 0.105 87.5 / 0%);
+  }
+}
+
 @utility animate-reveal {
-  animation: reveal-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-float {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+@utility animate-float-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+@utility animate-pulse-gold {
+  animation: pulse-gold 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

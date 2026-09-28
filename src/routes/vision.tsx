@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Check } from "lucide-react";
+import { Check, Target, Compass, Sparkles } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { values } from "@/data/site";
+import { values, visionMission } from "@/data/site";
+import { VisionMission } from "@/components/VisionMission";
+import { QuoteSection } from "@/components/QuoteSection";
 
 export const Route = createFileRoute("/vision")({
   head: () => ({
@@ -12,92 +14,69 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "The vision, mission, core values and long-term goals guiding Pradip Divansing Jadhav's ventures.",
+          "The long-term vision, core mission, and strategic roadmap guiding Pradip Divansing Jadhav's wellness enterprises.",
       },
       { property: "og:title", content: "Vision & Mission — Pradip Divansing Jadhav" },
       {
         property: "og:description",
         content:
-          "The vision, mission, core values and long-term goals guiding Pradip Divansing Jadhav's ventures.",
+          "The long-term vision, core mission, and strategic roadmap guiding Pradip Divansing Jadhav's wellness enterprises.",
       },
+      { property: "og:image", content: "/images/founder-portrait.jpg" },
     ],
   }),
   component: Vision,
 });
 
-const goals = [
-  "Placeholder goal. Strengthen wellness access in underserved regions.",
-  "Placeholder goal. Build a structured mentorship pipeline for young athletes.",
-  "Placeholder goal. Grow the group's ventures with disciplined, sustainable expansion.",
-  "Placeholder goal. Develop leaders who can run the organisation independently.",
+const strategicGoals = [
+  "Democratize preventative wellness education and certified formulations to 1,000,000 households across India.",
+  "Empower 100,000 independent micro-entrepreneurs and health coaches through Samsy Leadership Academy.",
+  "Build permanent sports training infrastructure and scholarships for underprivileged track talents in rural Maharashtra.",
+  "Pioneer bioactive, certified lifestyle nutritional science developed with zero artificial compromise.",
 ];
 
 function Vision() {
   return (
     <>
       <PageHero
-        eyebrow="Vision & mission"
+        eyebrow="Vision & Strategic Horizon"
         title={
           <>
-            Where this is <span className="gold-text">going</span>
+            Building Institutions That <span className="gold-text">Outlive Cycles</span>
           </>
         }
+        subtitle="To pioneer accessible, preventative, and community-driven wellness ecosystems that elevate millions of lives physically and financially."
       />
 
+      <VisionMission />
+
+      {/* Strategic Roadmap */}
       <section className="mx-auto max-w-5xl px-6 py-24">
-        <Reveal>
-          <blockquote className="surface-card rounded-sm p-10 sm:p-14">
-            <p className="text-2xl leading-snug sm:text-3xl md:text-4xl">
-              “Placeholder vision statement. To build wellness and enterprise that outlive me — and
-              to leave people stronger than I found them.”
-            </p>
-            <footer className="mt-8 text-xs tracking-[0.22em] text-gold uppercase">
-              Pradip Divansing Jadhav
-            </footer>
-          </blockquote>
-        </Reveal>
+        <SectionHeading
+          eyebrow="Strategic Roadmap"
+          title="Milestones for the Coming Decade"
+          subtitle="Clear, measurable benchmarks governing our enterprise expansion."
+        />
 
-        <div className="mt-20">
-          <SectionHeading
-            eyebrow="Mission"
-            title="The work, stated plainly"
-            subtitle="Placeholder mission statement. To deliver honest wellness solutions, create livelihood opportunities through the network, and mentor the next generation with the same discipline sport demands."
-          />
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-card/20">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <SectionHeading eyebrow="Core values" title="Non-negotiables" align="center" />
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {values.map((v, i) => (
-              <Reveal key={v.title} delay={i * 90}>
-                <article className="surface-card h-full rounded-sm p-7">
-                  <h3 className="text-xl">{v.title}</h3>
-                  <div className="gold-rule mt-4" />
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{v.body}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-6 py-24">
-        <SectionHeading eyebrow="Long-term goals" title="The roadmap ahead" />
-        <ul className="mt-12 space-y-5">
-          {goals.map((g, i) => (
+        <div className="mt-12 space-y-5">
+          {strategicGoals.map((g, i) => (
             <Reveal key={g} delay={i * 80}>
-              <li className="flex gap-4 border-b border-border pb-5">
-                <Check className="mt-0.5 size-5 shrink-0 text-gold" />
-                <span className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  {g}
-                </span>
-              </li>
+              <div className="surface-card flex items-start gap-4 rounded-2xl p-6 transition-all hover:border-gold/40">
+                <div className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-gold/15 text-gold">
+                  <Check className="size-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium leading-relaxed text-foreground sm:text-base">
+                    {g}
+                  </p>
+                </div>
+              </div>
             </Reveal>
           ))}
-        </ul>
+        </div>
       </section>
+
+      <QuoteSection />
     </>
   );
 }

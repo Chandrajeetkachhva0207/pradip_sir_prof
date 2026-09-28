@@ -1,91 +1,179 @@
+import { ArrowUp, Heart, Sparkles, Linkedin, Instagram, Youtube, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Instagram, Linkedin, Mail, Youtube } from "lucide-react";
 import { founder, navLinks } from "@/data/site";
-import { ButtonAction } from "./ui/button-link";
 
 export function SiteFooter() {
-  const [email, setEmail] = useState("");
-  const [done, setDone] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <footer className="border-t border-border bg-background">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.4fr_1fr_1.2fr]">
-        <div>
-          <p className="font-display text-2xl">
-            Pradip Divansing <span className="gold-text">Jadhav</span>
-          </p>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            {founder.statement}
-          </p>
-          <div className="mt-6 flex gap-3">
-            {[
-              { href: founder.linkedin, Icon: Linkedin, label: "LinkedIn" },
-              { href: founder.instagram, Icon: Instagram, label: "Instagram" },
-              { href: founder.youtube, Icon: Youtube, label: "YouTube" },
-              { href: `mailto:${founder.email}`, Icon: Mail, label: "Email" },
-            ].map(({ href, Icon, label }) => (
+    <footer className="relative overflow-hidden border-t border-gold/15 bg-background pt-20 pb-12">
+      {/* Subtle top glow */}
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-px w-3/4 bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 pb-16 border-b border-border/60">
+          {/* Column 1: Brand & Executive Summary */}
+          <div className="lg:col-span-4 space-y-5">
+            <div className="flex items-center gap-3.5">
+              <div className="flex size-10 items-center justify-center rounded-full border border-gold/40 bg-card/80 text-gold shadow-md">
+                <span className="font-display text-sm font-semibold tracking-wider">PDJ</span>
+              </div>
+              <div>
+                <span className="block font-display text-xl font-semibold tracking-wide text-foreground">
+                  Pradip <span className="gold-text">Jadhav</span>
+                </span>
+                <span className="block text-[0.62rem] font-medium tracking-[0.22em] text-muted-foreground uppercase">
+                  Founder • Visionary • Athlete
+                </span>
+              </div>
+            </div>
+
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {founder.statement}
+            </p>
+
+            <div className="flex items-center gap-3 pt-2">
               <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="rounded-sm border border-border p-2.5 text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-gold hover:text-gold"
+                href={founder.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
               >
-                <Icon className="size-4" />
+                <Linkedin className="size-4" />
               </a>
-            ))}
+              <a
+                href={founder.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
+              >
+                <Instagram className="size-4" />
+              </a>
+              <a
+                href={founder.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
+              >
+                <Youtube className="size-4" />
+              </a>
+              <a
+                href={founder.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter / X"
+                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
+              >
+                <Twitter className="size-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Column 2: Navigation Links */}
+          <div className="lg:col-span-2 space-y-4">
+            <p className="text-xs font-semibold tracking-widest text-gold uppercase">
+              Navigation
+            </p>
+            <ul className="space-y-2.5 text-xs text-muted-foreground">
+              {navLinks.slice(0, 6).map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="hover:text-gold transition-colors block py-0.5"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Ventures & Platforms */}
+          <div className="lg:col-span-3 space-y-4">
+            <p className="text-xs font-semibold tracking-widest text-gold uppercase">
+              Ventures & Initiatives
+            </p>
+            <ul className="space-y-2.5 text-xs text-muted-foreground">
+              <li>
+                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
+                  Samsy Wellness Network
+                </a>
+              </li>
+              <li>
+                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
+                  Samsy Uni Private Limited
+                </a>
+              </li>
+              <li>
+                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
+                  Samsy Leadership Academy
+                </a>
+              </li>
+              <li>
+                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
+                  Rural Athletic Health Mission
+                </a>
+              </li>
+              <li>
+                <a href="#speaking" className="hover:text-gold transition-colors block py-0.5">
+                  Keynote Engagements
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact & Secretariat */}
+          <div className="lg:col-span-3 space-y-4">
+            <p className="text-xs font-semibold tracking-widest text-gold uppercase">
+              Executive Desk
+            </p>
+            <div className="space-y-3 text-xs text-muted-foreground">
+              <p className="flex items-center gap-2">
+                <Mail className="size-3.5 text-gold shrink-0" />
+                <span>{founder.email}</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="size-3.5 text-gold shrink-0" />
+                <span>{founder.phone}</span>
+              </p>
+              <p className="flex items-start gap-2">
+                <MapPin className="size-3.5 text-gold shrink-0 mt-0.5" />
+                <span>{founder.location}</span>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div>
-          <p className="eyebrow">Quick links</p>
-          <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3">
-            {navLinks.map((l) => (
-              <li key={l.to}>
-                <Link
-                  to={l.to}
-                  className="link-underline text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <p className="eyebrow">Newsletter</p>
-          <p className="mt-5 text-sm text-muted-foreground">
-            Occasional notes on leadership, wellness and discipline.
+        {/* Bottom Bar: Copyright, Legal, Back to Top */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+          <p>
+            © {new Date().getFullYear()} {founder.name}. All rights reserved.
           </p>
-          <form
-            className="mt-5 flex flex-col gap-3 sm:flex-row"
-            onSubmit={(e) => {
-              e.preventDefault();
-              setDone(true);
-              setEmail("");
-            }}
-          >
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email"
-              className="min-w-0 flex-1 rounded-sm border border-input bg-muted/40 px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-gold"
-            />
-            <ButtonAction type="submit" className="shrink-0">
-              Join
-            </ButtonAction>
-          </form>
-          {done ? <p className="mt-3 text-sm text-gold">Thank you — you're on the list.</p> : null}
-        </div>
-      </div>
 
-      <div className="border-t border-border">
-        <p className="mx-auto max-w-7xl px-6 py-6 text-xs tracking-[0.16em] text-muted-foreground uppercase">
-          © {new Date().getFullYear()} {founder.name}. All rights reserved.
-        </p>
+          <div className="flex items-center gap-6">
+            <a href="#contact" className="hover:text-gold transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-border">•</span>
+            <a href="#contact" className="hover:text-gold transition-colors">
+              Terms & Conditions
+            </a>
+            <span className="text-border">•</span>
+            <button
+              type="button"
+              onClick={scrollToTop}
+              className="inline-flex items-center gap-1.5 font-medium text-gold hover:underline"
+            >
+              <span>Back to Top</span>
+              <ArrowUp className="size-3.5" />
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   );
