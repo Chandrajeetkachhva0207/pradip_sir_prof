@@ -34,9 +34,9 @@ export function AboutSection() {
 
               <div className="zoom-frame relative overflow-hidden rounded-3xl border border-gold/30 bg-card shadow-2xl shadow-black/60">
                 <img
-                  src="/images/founder-athlete.jpg"
+                  src="/images/founder-athlete.png"
                   alt="Pradip Divansing Jadhav — Athletic Foundations & Discipline"
-                  className="aspect-[4/5] w-full object-cover object-center"
+                  className="h-[700px] w-full object-cover object-center"
                   loading="lazy"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />

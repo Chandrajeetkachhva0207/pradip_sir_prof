@@ -112,7 +112,7 @@ export function HeroSection() {
               {/* Main Organic / Circular Image Frame */}
               <div className="zoom-frame relative mx-auto aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] border border-gold/30 bg-card shadow-2xl shadow-black/60 transition-all duration-500 hover:border-gold/60">
                 <img
-                  src="/images/founder-portrait.jpg"
+                  src="/images/pradip-jadhav.png"
                   alt="Pradip Divansing Jadhav — Founder, International Athlete & Mentor"
                   className="size-full object-cover object-top transition-transform duration-700"
                   loading="eager"

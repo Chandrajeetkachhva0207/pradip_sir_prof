@@ -337,7 +337,7 @@ export const ventures = [
     id: "samsy-uni",
     title: "Samsy Uni Private Limited",
     category: "Corporate Enterprise",
-    image: "/images/founder-keynote.jpg",
+    image: "/images/founder-keynote.png",
     role: "Founder & Managing Director",
     tagline: "Institutional quality, enterprise governance & product innovation",
     description:
@@ -354,7 +354,7 @@ export const ventures = [
     id: "leadership-academy",
     title: "Samsy Leadership Academy",
     category: "Education & Executive Coaching",
-    image: "/images/founder-portrait.jpg",
+    image: "/images/pradip-jadhav.png",
     role: "Chief Mentor & Lead Instructor",
     tagline: "Bridging sports discipline and corporate ownership",
     description:
