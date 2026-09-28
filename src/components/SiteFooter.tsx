@@ -137,10 +137,15 @@ export function SiteFooter() {
                 <Mail className="size-3.5 text-gold shrink-0" />
                 <span>{founder.email}</span>
               </p>
-              <p className="flex items-center gap-2">
-                <Phone className="size-3.5 text-gold shrink-0" />
-                <span>{founder.phone}</span>
-              </p>
+              <a
+                href={`https://wa.me/${founder.whatsappNumber || "917350299243"}?text=${encodeURIComponent("Hello Pradip sir, I am reaching out through your official portfolio website.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-gold transition-colors group"
+              >
+                <Phone className="size-3.5 text-gold shrink-0 group-hover:scale-110 transition-transform" />
+                <span>{founder.phone} (WhatsApp)</span>
+              </a>
               <p className="flex items-start gap-2">
                 <MapPin className="size-3.5 text-gold shrink-0 mt-0.5" />
                 <span>{founder.location}</span>
