@@ -27,7 +27,9 @@ export function HeroSection() {
               style={{ animationDelay: "100ms" }}
             >
               Building Ideas That Create{" "}
-              <span className="gold-text italic">Meaningful Impact.</span>
+              <span className="gold-text relative -left-1.5 italic">
+                Meaningful Impact.
+              </span>
             </h1>
 
             {/* Sub-label & Statement */}
