@@ -469,7 +469,7 @@ export const ventures = [
     id: "samsy-uni",
     title: "Samsy Uni Private Limited",
     category: "IT Solutions & Enterprise Software",
-    image: "/images/samsy-it-solutions.jpg",
+    image: "/images/founder-keynote.png",
     role: "Founder & Managing Director",
     tagline: "Enterprise software, cloud systems & multi-utility IT solutions",
     description:
@@ -592,14 +592,14 @@ export const galleryItems = [
     id: "g1",
     title: "Keynote Address at Global Leadership Summit",
     category: "Keynotes",
-    image: "/images/founder-keynote.jpg",
+    image: "/images/founder-keynote.png",
     caption: "Addressing over 3,000 founders and corporate executives on athletic resilience in business.",
   },
   {
     id: "g2",
     title: "Executive Portraiture — Head of Samsy Group",
     category: "Ventures",
-    image: "/images/founder-portrait.jpg",
+    image: "/images/founder-keynote_main.jpg",
     caption: "At the corporate headquarters of Samsy Uni Private Limited.",
   },
   {
@@ -620,14 +620,14 @@ export const galleryItems = [
     id: "g5",
     title: "Leadership Bootcamps with 500+ Mentees",
     category: "Mentorship",
-    image: "/images/founder-keynote.jpg",
+    image: "/images/founder.jpg",
     caption: "Hosting an interactive masterclass on self-discipline and financial independence.",
   },
   {
     id: "g6",
     title: "Youth Sports Equipment Distribution Drive",
     category: "Awards",
-    image: "/images/founder-athlete.jpg",
+    image: "/images/athlet.jpg",
     caption: "Presenting athletic sponsorships to young regional sprinters.",
   },
 ];
