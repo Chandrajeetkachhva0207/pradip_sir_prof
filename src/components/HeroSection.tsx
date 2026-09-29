@@ -8,8 +8,8 @@ export function HeroSection() {
       className="hero-glow relative min-h-screen overflow-hidden pt-28 pb-16 lg:flex lg:items-center lg:pt-36 lg:pb-24"
     >
       {/* Ambient background blur elements */}
-      <div className="pointer-events-none absolute -top-40 -left-40 size-[32rem] rounded-full bg-gold/10 blur-[130px]" />
-      <div className="pointer-events-none absolute top-1/2 -right-40 size-[28rem] rounded-full bg-blue-500/10 blur-[140px]" />
+      <div className="pointer-events-none absolute -top-40 -left-40 size-[32rem] rounded-full bg-gold/8 blur-[130px]" />
+      <div className="pointer-events-none absolute top-1/2 -right-40 size-[28rem] rounded-full bg-primary/5 blur-[140px]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
@@ -57,7 +57,7 @@ export function HeroSection() {
             >
               <a
                 href="#journey"
-                className="group inline-flex items-center justify-center gap-3 rounded-full border border-gold bg-gradient-to-r from-gold via-amber-400 to-gold px-7 py-3.5 text-xs font-semibold tracking-widest text-primary-foreground uppercase shadow-lg shadow-gold/25 transition-all duration-300 hover:scale-[1.03] hover:shadow-gold"
+                className="group inline-flex items-center justify-center gap-3 rounded-full border border-gold bg-gradient-to-r from-gold via-amber-400 to-gold px-7 py-3.5 text-xs font-semibold tracking-widest text-primary uppercase shadow-lg shadow-gold/25 transition-all duration-300 hover:scale-[1.03] hover:shadow-gold"
               >
                 <span>Explore My Journey</span>
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -65,7 +65,7 @@ export function HeroSection() {
 
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-7 py-3.5 text-xs font-semibold tracking-widest text-foreground uppercase backdrop-blur-md transition-all duration-300 hover:border-gold/60 hover:bg-gold/10 hover:text-gold"
+                className="group inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-7 py-3.5 text-xs font-semibold tracking-widest text-foreground uppercase shadow-sm transition-all duration-300 hover:border-gold/60 hover:bg-gold/10 hover:text-gold"
               >
                 <span>Let's Connect</span>
               </a>
@@ -78,26 +78,26 @@ export function HeroSection() {
             >
               <div>
                 <p className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-                  12<span className="text-gold">+</span>
+                  3<span className="text-gold">x</span>
                 </p>
                 <p className="mt-1 text-[0.68rem] tracking-wider text-muted-foreground uppercase">
-                  Years Leadership
+                  World Records
                 </p>
               </div>
               <div>
                 <p className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-                  25k<span className="text-gold">+</span>
+                  1<span className="text-gold">st</span>
                 </p>
                 <p className="mt-1 text-[0.68rem] tracking-wider text-muted-foreground uppercase">
-                  People Impacted
+                  World Champion Gold
                 </p>
               </div>
               <div>
                 <p className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-                  25<span className="text-gold">+</span>
+                  3<span className="text-gold">rd</span>
                 </p>
                 <p className="mt-1 text-[0.68rem] tracking-wider text-muted-foreground uppercase">
-                  Cities Scaled
+                  Dan Black Belt
                 </p>
               </div>
             </div>
@@ -106,14 +106,14 @@ export function HeroSection() {
           {/* Right Column: Founder Portrait & Floating Badges */}
           <div className="relative flex justify-center lg:col-span-5 xl:col-span-5">
             {/* Ambient circular halo glow */}
-            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-tr from-gold/25 via-blue-600/10 to-transparent blur-3xl" />
+            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-tr from-gold/20 via-primary/5 to-transparent blur-3xl" />
 
             <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
               {/* Main Organic / Circular Image Frame */}
-              <div className="zoom-frame relative mx-auto aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] border border-gold/30 bg-card shadow-2xl shadow-black/60 transition-all duration-500 hover:border-gold/60">
+              <div className="zoom-frame relative mx-auto aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] border border-gold/30 bg-card shadow-2xl shadow-primary/10 transition-all duration-500 hover:border-gold/60">
                 <img
                   src="/images/pradip-jadhav.png"
-                  alt="Pradip Divansing Jadhav — Founder, International Athlete & Mentor"
+                  alt="Pradip Divansing Jadhav — O-Sport World Champion, 3rd Dan Black Belt, IT Solutions Founder"
                   className="size-full object-cover object-top transition-transform duration-700"
                   loading="eager"
                 />
@@ -121,51 +121,51 @@ export function HeroSection() {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/90 via-background/15 to-transparent" />
 
                 {/* Bottom Portrait Name Badge */}
-                <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/10 bg-background/70 p-4 shadow-xl backdrop-blur-xl">
+                <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-gold/25 bg-card/90 p-4 shadow-xl shadow-primary/5 backdrop-blur-xl">
                   <p className="font-display text-lg font-semibold text-foreground">
                     Pradip Divansing Jadhav
                   </p>
                   <p className="text-[0.65rem] tracking-widest text-gold uppercase">
-                    Founder • Athlete • Mentor
+                    O-Sport World Champion • 3rd Dan Black Belt • Founder
                   </p>
                 </div>
               </div>
 
-              {/* Floating Card 1: 12+ Years Experience (Top Left) */}
-              <div className="animate-float absolute -top-5 -left-4 hidden rounded-2xl border border-gold/30 bg-background/85 p-3.5 shadow-xl shadow-black/40 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
+              {/* Floating Card 1: World Champion (Top Left) */}
+              <div className="animate-float absolute -top-5 -left-4 hidden rounded-2xl border border-gold/30 bg-card p-3.5 shadow-xl shadow-primary/8 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
                 <div className="flex size-10 items-center justify-center rounded-xl bg-gold/15 text-gold">
                   <Trophy className="size-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-foreground">12+ Years</p>
+                  <p className="text-xs font-bold text-foreground">World Champion</p>
                   <p className="text-[0.65rem] tracking-wider text-muted-foreground uppercase">
-                    Executive Mastery
+                    O-Sport Gold Medalist
                   </p>
                 </div>
               </div>
 
-              {/* Floating Card 2: 50+ Global Projects (Middle Right) */}
-              <div className="animate-float-reverse absolute top-1/3 -right-6 hidden rounded-2xl border border-gold/30 bg-background/85 p-3.5 shadow-xl shadow-black/40 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
-                <div className="flex size-10 items-center justify-center rounded-xl bg-blue-500/15 text-blue-400">
-                  <Globe className="size-5" />
+              {/* Floating Card 2: 3x World Records (Middle Right) */}
+              <div className="animate-float-reverse absolute top-1/3 -right-6 hidden rounded-2xl border border-gold/30 bg-card p-3.5 shadow-xl shadow-primary/8 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
+                <div className="flex size-10 items-center justify-center rounded-xl bg-gold/15 text-gold">
+                  <Award className="size-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-foreground">50+ Projects</p>
+                  <p className="text-xs font-bold text-foreground">3x World Records</p>
                   <p className="text-[0.65rem] tracking-wider text-muted-foreground uppercase">
-                    Scaled Nationwide
+                    London, Asian & Bharat
                   </p>
                 </div>
               </div>
 
-              {/* Floating Card 3: Founder & CEO (Bottom Left) */}
-              <div className="animate-float absolute -bottom-5 -left-5 hidden rounded-2xl border border-gold/30 bg-background/85 p-3.5 shadow-xl shadow-black/40 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
-                <div className="flex size-10 items-center justify-center rounded-xl bg-gold/15 text-gold">
+              {/* Floating Card 3: 3rd Dan Black Belt & MMA (Bottom Left) */}
+              <div className="animate-float absolute -bottom-5 -left-5 hidden rounded-2xl border border-gold/30 bg-card p-3.5 shadow-xl shadow-primary/8 backdrop-blur-xl sm:flex sm:items-center sm:gap-3">
+                <div className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <Briefcase className="size-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-foreground">Founder & CEO</p>
+                  <p className="text-xs font-bold text-foreground">3rd Dan Black Belt</p>
                   <p className="text-[0.65rem] tracking-wider text-muted-foreground uppercase">
-                    Samsy Group
+                    Kickboxing & MMA
                   </p>
                 </div>
               </div>

@@ -33,8 +33,8 @@ export function GallerySection() {
               onClick={() => setSelectedCategory(cat)}
               className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
                 selectedCategory === cat
-                  ? "border border-gold bg-gold text-primary-foreground shadow-md shadow-gold/20"
-                  : "border border-border bg-card/60 text-muted-foreground hover:border-gold/40 hover:text-foreground"
+                  ? "border border-gold bg-gold text-primary shadow-md shadow-gold/20"
+                  : "border border-border bg-card text-muted-foreground hover:border-gold/40 hover:text-foreground"
               }`}
             >
               {cat}
@@ -61,14 +61,14 @@ export function GallerySection() {
 
                   {/* Zoom indicator on hover */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div className="flex size-12 items-center justify-center rounded-full bg-background/80 text-gold shadow-lg backdrop-blur-md">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-card/90 text-gold shadow-lg backdrop-blur-md">
                       <ZoomIn className="size-5" />
                     </div>
                   </div>
 
                   {/* Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="rounded-full border border-gold/30 bg-background/80 px-3 py-1 text-[0.65rem] font-bold tracking-wider text-gold uppercase backdrop-blur-md">
+                    <span className="rounded-full border border-gold/30 bg-card/90 px-3 py-1 text-[0.65rem] font-bold tracking-wider text-gold uppercase backdrop-blur-md shadow-sm">
                       {item.category}
                     </span>
                   </div>
@@ -105,7 +105,7 @@ export function GallerySection() {
               type="button"
               onClick={() => setActiveImage(null)}
               aria-label="Close modal"
-              className="absolute top-6 right-6 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-background/80 text-foreground transition-colors hover:bg-gold hover:text-primary-foreground"
+              className="absolute top-6 right-6 z-10 flex size-10 items-center justify-center rounded-full border border-gold/30 bg-card/90 text-foreground transition-colors hover:bg-gold hover:text-primary"
             >
               <X className="size-5" />
             </button>

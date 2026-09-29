@@ -29,20 +29,20 @@ export const Route = createFileRoute("/about")({
 
 const backgroundPillars = [
   {
-    heading: "Athletic Rigor",
-    body: "Trained and competed as a national and international track athlete for over a decade. Representing India cemented the mental fortitude, aerobic endurance, and extreme accountability that govern all current enterprise ventures.",
+    heading: "Combat Sports & World Records",
+    body: "O-Sport World Champion Gold Medalist (2017–2018), International UFI Kickboxing Gold Medalist (2017), 3rd Dan Black Belt, and holder of 3 World Records (London, Asian, Bharat). Completed WAKO India international camp in Ooty and serves as a Grappling National Referee.",
   },
   {
-    heading: "Academic & Scientific Foundations",
-    body: "Synthesized business strategy and human physiology to understand how preventative health, nutritional biochemistry, and daily lifestyle habits drive lifelong human performance.",
+    heading: "Orphan Student Resilience",
+    body: "Rising with self-reliance from orphan student roots without privilege, Pradip proved that martial discipline and indomitable courage conquer all adversity, earning the Bharat Ratna Atal Rashtriya Gaurav Puraskar.",
   },
   {
-    heading: "Commercial Governance & Enterprise",
-    body: "Founded Samsy Wellness Network and Samsy Uni Private Limited, scaling product development, modern supply chain distribution, and partner enablement apps across 25+ cities in India.",
+    heading: "IT Solutions & Enterprise Governance",
+    body: "Founded Samsy Uni Private Limited (headquartered in Pune, delivering enterprise IT solutions, custom software engineering, and cloud infrastructure) alongside Samsy Wellness Network.",
   },
   {
-    heading: "Grassroots Mentorship & Philanthropy",
-    body: "Established the Samsy Leadership Academy and Rural Athletic Health Mission, mentoring over 25,000 active community members and providing athletic sponsorships to underrepresented sports youth.",
+    heading: "Grassroots Mentorship & Honors",
+    body: "Conferred the MASA India Mentor Award 2019, Sakal Youth Inspiration Award, and Banjara Krida Bhushan; actively mentors 25,000+ youth across India in physical fitness, sportsmanship, and digital livelihoods.",
   },
 ];
 
@@ -79,7 +79,7 @@ function About() {
           <SectionHeading
             eyebrow="Biography"
             title="The Architect Behind the Samsy Movement"
-            subtitle="Pradip Divansing Jadhav is an entrepreneur, former international athlete, and mentor dedicated to solving India's lifestyle health crisis through preventative wellness and grassroots micro-entrepreneurship."
+            subtitle="Pradip Divansing Jadhav is an O-Sport World Champion, 3rd Dan Black Belt, IT enterprise founder, and mentor dedicated to technological empowerment, youth sports, and grassroots micro-entrepreneurship."
           />
 
           <div className="grid gap-6 sm:grid-cols-2 pt-4">

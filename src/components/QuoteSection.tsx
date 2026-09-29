@@ -6,7 +6,7 @@ export function QuoteSection() {
   return (
     <section className="relative overflow-hidden py-28 lg:py-36 border-y border-gold/20 bg-gradient-to-b from-card/60 via-card/90 to-card/60">
       {/* Background radial gold glow */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,oklch(0.76_0.105_87.5/12%),transparent_65%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,162,39,0.10),transparent_65%)]" />
 
       <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-8">
         <Reveal>

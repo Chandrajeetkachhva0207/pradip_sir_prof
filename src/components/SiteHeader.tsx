@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
 import { founder } from "@/data/site";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
   { label: "Home", href: "#hero", route: "/" },
@@ -56,7 +57,7 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-gold/15 bg-background/90 shadow-2xl shadow-black/40 backdrop-blur-xl py-3.5"
+          ? "border-b border-gold/20 bg-background/95 shadow-md shadow-navy/5 backdrop-blur-xl py-3.5"
           : "border-b border-transparent bg-transparent py-5"
       }`}
     >
@@ -95,8 +96,10 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        {/* Right: CTA & Mobile Toggle */}
+        {/* Right: Theme Toggle, CTA & Mobile Toggle */}
         <div className="flex items-center gap-3">
+          <ThemeToggle />
+
           <a
             href={isHome ? "#contact" : "/#contact"}
             onClick={(e) => handleNavClick(e, "#contact")}
@@ -137,6 +140,13 @@ export function SiteHeader() {
           </div>
 
           <div className="mt-8 space-y-4 pt-4 border-t border-border">
+            <div className="flex items-center justify-between py-2 px-1">
+              <span className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                Display Theme
+              </span>
+              <ThemeToggle />
+            </div>
+
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, "#contact")}
@@ -149,6 +159,7 @@ export function SiteHeader() {
             <div className="text-center text-xs text-muted-foreground">
               <p>{founder.location}</p>
               <p className="mt-1">{founder.email}</p>
+              <p className="mt-0.5 text-[11px]">{founder.secondaryEmail}</p>
             </div>
           </div>
         </div>

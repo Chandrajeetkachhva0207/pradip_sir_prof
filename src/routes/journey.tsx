@@ -34,7 +34,7 @@ function Journey() {
             The Path of <span className="gold-text">Discipline & Scale</span>
           </>
         }
-        subtitle="From international athletic championship tracks to establishing multi-crore wellness networks across 25+ cities in India."
+        subtitle="From international combat championship rings and world records to establishing enterprise IT solutions and wellness networks across 25+ cities in India."
       />
 
       <JourneyTimeline />

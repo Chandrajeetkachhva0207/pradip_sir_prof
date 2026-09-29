@@ -1,9 +1,43 @@
-import { Award, Trophy, Medal, Star, CheckCircle } from "lucide-react";
+import { useState } from "react";
+import { Trophy, CheckCircle, Sparkles, Award, Medal, ShieldCheck } from "lucide-react";
 import { achievements } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 
+type FilterCategory = "all" | "world" | "awards" | "martial-arts";
+
+const filters: { id: FilterCategory; label: string }[] = [
+  { id: "all", label: "All Honors & Events (19)" },
+  { id: "world", label: "World Titles & Records" },
+  { id: "awards", label: "National & Civic Awards" },
+  { id: "martial-arts", label: "Martial Arts & Credentials" },
+];
+
 export function AchievementsSection() {
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>("all");
+
+  const filteredAchievements = achievements.filter((item) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "world") {
+      return item.category === "World Championship" || item.category === "World Record";
+    }
+    if (activeFilter === "awards") {
+      return (
+        item.category === "National Award" ||
+        item.category === "State Honor" ||
+        item.category === "Civic Honor"
+      );
+    }
+    if (activeFilter === "martial-arts") {
+      return (
+        item.category === "Championship" ||
+        item.category === "Martial Arts Honor" ||
+        item.category === "Credentials"
+      );
+    }
+    return true;
+  });
+
   return (
     <section id="achievements" className="relative overflow-hidden py-24 lg:py-32">
       {/* Background Glow */}
@@ -11,14 +45,36 @@ export function AchievementsSection() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Honors & Milestones"
+          eyebrow="Honors, Titles & World Records"
           title="Achievements & Recognition"
-          subtitle="A chronicle of athletic triumphs, executive citations, and national leadership milestones."
+          subtitle="From orphan student roots to O-Sport World Champion, 3x World Record Holder, and recipient of the Bharat Ratna Atal Rashtriya Gaurav Puraskar."
         />
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {achievements.map((item, index) => (
-            <Reveal key={item.title + item.year} delay={index * 80}>
+        {/* Filter Navigation */}
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+          {filters.map((f) => {
+            const isActive = activeFilter === f.id;
+            return (
+              <button
+                key={f.id}
+                onClick={() => setActiveFilter(f.id)}
+                type="button"
+                className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
+                  isActive
+                    ? "border border-gold bg-gold text-primary shadow-md shadow-gold/25"
+                    : "border border-border bg-card/60 text-muted-foreground hover:border-gold/40 hover:text-foreground"
+                }`}
+              >
+                {f.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Grid of Achievements */}
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {filteredAchievements.map((item, index) => (
+            <Reveal key={item.title + item.year} delay={Math.min(index * 60, 400)}>
               <div className="surface-card group relative flex h-full flex-col justify-between rounded-2xl p-7 transition-all duration-300 hover:border-gold/50">
                 <div>
                   {/* Top Bar: Year & Badge */}
@@ -46,9 +102,14 @@ export function AchievementsSection() {
                   </p>
                 </div>
 
-                <div className="mt-6 flex items-center gap-2 border-t border-border/70 pt-4 text-[0.72rem] font-medium text-foreground/80">
-                  <CheckCircle className="size-3.5 text-gold" />
-                  <span>Verified Distinction</span>
+                <div className="mt-6 flex items-center justify-between border-t border-border/70 pt-4 text-[0.72rem] font-medium text-foreground/80">
+                  <div className="flex items-center gap-1.5 text-gold">
+                    <CheckCircle className="size-3.5" />
+                    <span>Official Citation</span>
+                  </div>
+                  <span className="text-[0.68rem] tracking-wider text-muted-foreground uppercase">
+                    {item.category}
+                  </span>
                 </div>
               </div>
             </Reveal>

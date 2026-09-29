@@ -7,9 +7,6 @@ import {
   CheckCircle2,
   AlertCircle,
   Linkedin,
-  Instagram,
-  Youtube,
-  Twitter,
   Sparkles,
   Copy,
   Check,
@@ -23,11 +20,15 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { WhatsAppIcon } from "@/components/FloatingWhatsApp";
 
 const INQUIRY_TOPICS = [
+  "Website Development",
+  "App Development",
+  "Blockchain Solutions",
   "Strategic Alliance / Partnership",
+  "Samsy IT Solutions & Cloud",
+  "Samsy Wellness Network",
+  "Hope Multipurpose Foundation",
   "Keynote Speaker / Summit",
   "Executive Mentorship & Coaching",
-  "Samsy Wellness & Ventures",
-  "Media, Press & Interview",
   "General Executive Inquiry",
 ] as const;
 
@@ -132,37 +133,7 @@ export function ContactSection() {
           subtitle="Direct communication channel routing your proposals, keynote invitations, and strategic inquiries directly to the Founder."
         />
 
-        {/* Pipeline Process Strip: Visitor → Contact Form → WhatsApp → Founder */}
-        <Reveal>
-          <div className="mt-10 mx-auto max-w-4xl rounded-2xl border border-gold/30 bg-card/60 p-4 sm:p-5 backdrop-blur-md">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium">
-              <span className="text-gold font-semibold uppercase tracking-widest text-[11px] flex items-center gap-1.5">
-                <span className="size-2 rounded-full bg-emerald-400 animate-pulse" />
-                Live Routing Pipeline:
-              </span>
-              <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center text-foreground/90">
-                <span className="rounded-lg bg-gold/15 px-3 py-1 text-gold border border-gold/30 font-semibold">
-                  1. Visitor
-                </span>
-                <ArrowRight className="size-3.5 text-muted-foreground" />
-                <span className="rounded-lg bg-gold/15 px-3 py-1 text-gold border border-gold/30 font-semibold">
-                  2. Contact Form
-                </span>
-                <ArrowRight className="size-3.5 text-muted-foreground" />
-                <span className="rounded-lg bg-emerald-500/20 px-3 py-1 text-emerald-400 border border-emerald-500/40 font-semibold flex items-center gap-1.5">
-                  <WhatsAppIcon className="size-3.5 fill-current" />
-                  3. WhatsApp
-                </span>
-                <ArrowRight className="size-3.5 text-muted-foreground" />
-                <span className="rounded-lg bg-gold/20 px-3 py-1 text-gold border border-gold/40 font-semibold">
-                  4. Founder Desk
-                </span>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Direct Contact Info & Socials */}
           <div className="space-y-8 lg:col-span-5">
             <Reveal>
@@ -215,7 +186,7 @@ export function ContactSection() {
                     </a>
                   </div>
 
-                  {/* Email */}
+                  {/* Primary Email */}
                   <a
                     href={`mailto:${founder.email}`}
                     className="flex items-start gap-4 group transition-colors"
@@ -225,10 +196,28 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-                        Email Secretariat
+                        Executive Secretariat
                       </p>
                       <p className="mt-0.5 text-sm font-medium text-foreground group-hover:text-gold transition-colors">
                         {founder.email}
+                      </p>
+                    </div>
+                  </a>
+
+                  {/* Samsy Wellness Network Email */}
+                  <a
+                    href={`mailto:${founder.secondaryEmail}`}
+                    className="flex items-start gap-4 group transition-colors"
+                  >
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gold/15 text-gold group-hover:bg-gold group-hover:text-primary-foreground transition-all">
+                      <Mail className="size-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                        Samsy Wellness Network
+                      </p>
+                      <p className="mt-0.5 text-sm font-medium text-foreground group-hover:text-gold transition-colors">
+                        {founder.secondaryEmail}
                       </p>
                     </div>
                   </a>
@@ -281,33 +270,6 @@ export function ContactSection() {
                       className="flex size-10 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
                     >
                       <Linkedin className="size-4" />
-                    </a>
-                    <a
-                      href={founder.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Instagram Profile"
-                      className="flex size-10 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
-                    >
-                      <Instagram className="size-4" />
-                    </a>
-                    <a
-                      href={founder.youtube}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="YouTube Channel"
-                      className="flex size-10 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
-                    >
-                      <Youtube className="size-4" />
-                    </a>
-                    <a
-                      href={founder.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Twitter / X Profile"
-                      className="flex size-10 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
-                    >
-                      <Twitter className="size-4" />
                     </a>
                   </div>
                 </div>

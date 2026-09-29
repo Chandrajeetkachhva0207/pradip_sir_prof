@@ -44,7 +44,7 @@ export function JourneyTimeline() {
                 >
                   {/* Timeline Node Marker */}
                   <div className="absolute top-1.5 left-6 -translate-x-1/2 lg:left-1/2">
-                    <div className="relative flex size-12 items-center justify-center rounded-full border-2 border-gold bg-background shadow-xl shadow-gold/20 transition-transform duration-300 hover:scale-110">
+                    <div className="relative flex size-12 items-center justify-center rounded-full border-2 border-gold bg-card shadow-lg shadow-gold/20 transition-transform duration-300 hover:scale-110">
                       <Icon className="size-5 text-gold" />
                       <span className="absolute -inset-1 rounded-full border border-gold/30 animate-pulse-gold" />
                     </div>

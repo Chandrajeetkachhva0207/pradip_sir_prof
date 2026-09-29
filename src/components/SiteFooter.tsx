@@ -1,4 +1,4 @@
-import { ArrowUp, Heart, Sparkles, Linkedin, Instagram, Youtube, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowUp, Heart, Sparkles, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { founder, navLinks } from "@/data/site";
 
@@ -44,33 +44,6 @@ export function SiteFooter() {
               >
                 <Linkedin className="size-4" />
               </a>
-              <a
-                href={founder.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
-              >
-                <Instagram className="size-4" />
-              </a>
-              <a
-                href={founder.youtube}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
-              >
-                <Youtube className="size-4" />
-              </a>
-              <a
-                href={founder.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X"
-                className="flex size-9 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:text-gold"
-              >
-                <Twitter className="size-4" />
-              </a>
             </div>
           </div>
 
@@ -100,23 +73,33 @@ export function SiteFooter() {
             </p>
             <ul className="space-y-2.5 text-xs text-muted-foreground">
               <li>
-                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
+                <a
+                  href="https://samsywellness.network/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold transition-colors block py-0.5"
+                >
                   Samsy Wellness Network
                 </a>
               </li>
               <li>
-                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
-                  Samsy Uni Private Limited
+                <a
+                  href="https://www.samsy.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold transition-colors block py-0.5"
+                >
+                  Samsy Uni Pvt Ltd (IT Solutions)
                 </a>
               </li>
               <li>
                 <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
-                  Samsy Leadership Academy
+                  Hope Multipurpose Foundation
                 </a>
               </li>
               <li>
-                <a href="#ventures" className="hover:text-gold transition-colors block py-0.5">
-                  Rural Athletic Health Mission
+                <a href="#achievements" className="hover:text-gold transition-colors block py-0.5">
+                  Honors & World Records
                 </a>
               </li>
               <li>
@@ -133,10 +116,20 @@ export function SiteFooter() {
               Executive Desk
             </p>
             <div className="space-y-3 text-xs text-muted-foreground">
-              <p className="flex items-center gap-2">
+              <a
+                href={`mailto:${founder.email}`}
+                className="flex items-center gap-2 hover:text-gold transition-colors"
+              >
                 <Mail className="size-3.5 text-gold shrink-0" />
                 <span>{founder.email}</span>
-              </p>
+              </a>
+              <a
+                href={`mailto:${founder.secondaryEmail}`}
+                className="flex items-center gap-2 hover:text-gold transition-colors"
+              >
+                <Mail className="size-3.5 text-gold shrink-0" />
+                <span>{founder.secondaryEmail}</span>
+              </a>
               <a
                 href={`https://wa.me/${founder.whatsappNumber || "917350299243"}?text=${encodeURIComponent("Hello Pradip sir, I am reaching out through your official portfolio website.")}`}
                 target="_blank"

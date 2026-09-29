@@ -1,18 +1,19 @@
 import { ArrowRight, Sparkles, Mail, MessageSquare } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
+import { founder } from "@/data/site";
 
 export function CtaSection() {
   return (
     <section className="relative overflow-hidden py-24 lg:py-32">
       {/* Background ambient lighting */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,oklch(0.76_0.105_87.5/15%),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(201,162,39,0.12),transparent_70%)]" />
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <Reveal>
           <div className="surface-card relative overflow-hidden rounded-[2.5rem] border border-gold/40 p-10 text-center sm:p-16 lg:p-20">
             {/* Ambient decorative elements */}
             <div className="pointer-events-none absolute -top-24 -right-24 size-64 rounded-full bg-gold/15 blur-3xl" />
-            <div className="pointer-events-none absolute -bottom-24 -left-24 size-64 rounded-full bg-blue-500/15 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 size-64 rounded-full bg-primary/10 blur-3xl" />
 
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-gold uppercase backdrop-blur-md">
               <Sparkles className="size-3.5" />
@@ -38,7 +39,7 @@ export function CtaSection() {
               </a>
 
               <a
-                href="mailto:connect@pradipjadhav.com"
+                href={`mailto:${founder.email}`}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-8 py-4 text-xs font-semibold tracking-widest text-foreground uppercase backdrop-blur-md transition-all duration-300 hover:border-gold/60 hover:bg-gold/10 hover:text-gold"
               >
                 <Mail className="size-4 text-gold" />

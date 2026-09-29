@@ -14,13 +14,13 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "The long-term vision, core mission, and strategic roadmap guiding Pradip Divansing Jadhav's wellness enterprises.",
+          "To build a stronger, smarter, healthier, and globally respected India through education, innovation, blockchain technology, entrepreneurship, and leadership.",
       },
       { property: "og:title", content: "Vision & Mission — Pradip Divansing Jadhav" },
       {
         property: "og:description",
         content:
-          "The long-term vision, core mission, and strategic roadmap guiding Pradip Divansing Jadhav's wellness enterprises.",
+          "To build a stronger, smarter, healthier, and globally respected India through education, innovation, blockchain technology, entrepreneurship, and leadership.",
       },
       { property: "og:image", content: "/images/founder-portrait.jpg" },
     ],
@@ -29,10 +29,10 @@ export const Route = createFileRoute("/vision")({
 });
 
 const strategicGoals = [
-  "Democratize preventative wellness education and certified formulations to 1,000,000 households across India.",
-  "Empower 100,000 independent micro-entrepreneurs and health coaches through Samsy Leadership Academy.",
-  "Build permanent sports training infrastructure and scholarships for underprivileged track talents in rural Maharashtra.",
-  "Pioneer bioactive, certified lifestyle nutritional science developed with zero artificial compromise.",
+  "Build a stronger, smarter, healthier, and globally respected India through education, innovation, and ethical leadership.",
+  "Pioneer enterprise software, blockchain technology, and secure digital architecture via Samsy Uni Private Limited.",
+  "Democratize preventative wellness education and certified community health solutions to millions across India via Samsy Wellness Network.",
+  "Empower orphan students and grassroots youth with scholarships, sports sponsorships, and mentorship via Hope Multipurpose Foundation.",
 ];
 
 function Vision() {
@@ -42,10 +42,10 @@ function Vision() {
         eyebrow="Vision & Strategic Horizon"
         title={
           <>
-            Building Institutions That <span className="gold-text">Outlive Cycles</span>
+            A Stronger, Smarter, <span className="gold-text">Healthier India</span>
           </>
         }
-        subtitle="To pioneer accessible, preventative, and community-driven wellness ecosystems that elevate millions of lives physically and financially."
+        subtitle="To build a stronger, smarter, healthier, and globally respected India through education, innovation, blockchain technology, entrepreneurship, and leadership."
       />
 
       <VisionMission />

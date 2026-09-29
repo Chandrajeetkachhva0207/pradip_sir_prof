@@ -35,6 +35,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-gold-glow: var(--gold-glow);
@@ -50,63 +52,152 @@
 :root {
   --radius: 0.5rem;
 
-  /* Midnight Navy #071328 */
-  --background: oklch(0.185 0.048 262.5);
-  /* White #F8FAFC */
-  --foreground: oklch(0.984 0.003 247.858);
-  /* Deep Royal Navy #132B4F */
-  --card: oklch(0.245 0.055 260 / 65%);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.22 0.05 260);
-  --popover-foreground: oklch(0.984 0.003 247.858);
+  /* Background: Off-White #F8F7F3 */
+  --background: #F8F7F3;
+  /* Main Text: Charcoal #1F2937 */
+  --foreground: #1F2937;
 
-  --primary: oklch(0.742 0.096 87.5);
-  --primary-foreground: oklch(0.185 0.048 262.5);
-  --secondary: oklch(0.28 0.06 258);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.24 0.045 260);
-  /* Muted Blue Gray #A6B4C8 */
-  --muted-foreground: oklch(0.769 0.024 255);
-  --accent: oklch(0.742 0.096 87.5);
-  --accent-foreground: oklch(0.185 0.048 262.5);
+  /* Cards: White #FFFFFF */
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
 
-  /* Champagne Gold #D4AF37 / #C9A64E */
-  --gold: oklch(0.76 0.105 87.5);
-  --gold-soft: oklch(0.76 0.105 87.5 / 16%);
-  --gold-glow: oklch(0.76 0.105 87.5 / 35%);
-  /* Warm Ivory #FAF8F5 */
-  --ivory: oklch(0.975 0.015 92);
-  --ivory-foreground: oklch(0.22 0.045 262);
+  /* Primary: Deep Navy #0B132B */
+  --primary: #0B132B;
+  --primary-foreground: #FFFFFF;
 
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.76 0.105 87.5 / 18%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.76 0.105 87.5 / 45%);
+  /* Secondary / Soft Ivory */
+  --secondary: #EFECE6;
+  --secondary-foreground: #0B132B;
+
+  --muted: #F2EFEB;
+  /* Secondary Text: Slate Gray #64748B */
+  --muted-foreground: #64748B;
+
+  /* Accent: Premium Gold #C9A227 */
+  --accent: #C9A227;
+  --accent-foreground: #0B132B;
+
+  /* Deep Navy */
+  --navy: #0B132B;
+  --navy-soft: rgba(11, 19, 43, 0.08);
+
+  /* Premium Gold #C9A227 */
+  --gold: #C9A227;
+  --gold-soft: rgba(201, 162, 39, 0.12);
+  --gold-glow: rgba(201, 162, 39, 0.28);
+
+  /* Warm Ivory */
+  --ivory: #FAF8F5;
+  --ivory-foreground: #1F2937;
+
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+
+  /* Delicately tinted borders & inputs */
+  --border: rgba(11, 19, 43, 0.10);
+  --input: rgba(11, 19, 43, 0.08);
+  --ring: rgba(201, 162, 39, 0.45);
 
   --gradient-hero: radial-gradient(
       circle at 18% 12%,
-      oklch(0.32 0.07 258 / 50%),
+      rgba(201, 162, 39, 0.09),
       transparent 55%
     ),
-    radial-gradient(circle at 85% 15%, oklch(0.76 0.105 87.5 / 14%), transparent 48%),
-    radial-gradient(circle at 50% 80%, oklch(0.25 0.06 255 / 35%), transparent 60%);
+    radial-gradient(circle at 85% 15%, rgba(11, 19, 43, 0.04), transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(201, 162, 39, 0.06), transparent 60%);
 
   --gradient-gold: linear-gradient(
     115deg,
-    oklch(0.70 0.09 80),
-    oklch(0.85 0.12 94),
-    oklch(0.72 0.10 82)
+    #A68018,
+    #C9A227 45%,
+    #E1BA3F 70%,
+    #B38D1F
   );
 
   --gradient-card: linear-gradient(
-    165deg,
-    oklch(0.27 0.06 258 / 75%),
-    oklch(0.20 0.045 262 / 85%)
+    170deg,
+    #FFFFFF 0%,
+    #FDFCFA 100%
   );
 
-  --shadow-luxe: 0 25px 60px -25px oklch(0 0 0 / 75%), 0 0 0 1px oklch(0.76 0.105 87.5 / 14%);
-  --shadow-gold: 0 20px 50px -20px oklch(0.76 0.105 87.5 / 40%), 0 0 0 1px oklch(0.76 0.105 87.5 / 45%);
+  --shadow-luxe: 0 10px 30px -10px rgba(11, 19, 43, 0.08), 0 0 0 1px rgba(201, 162, 39, 0.14);
+  --shadow-gold: 0 14px 34px -10px rgba(201, 162, 39, 0.3), 0 0 0 1px rgba(201, 162, 39, 0.45);
+}
+
+.dark {
+  /* Dark Mode: Luxury Midnight Deep Navy */
+  --background: #080F22;
+  /* Crisp White */
+  --foreground: #F8FAFC;
+
+  /* Royal Navy Cards */
+  --card: #0E1833;
+  --card-foreground: #F8FAFC;
+  --popover: #0E1833;
+  --popover-foreground: #F8FAFC;
+
+  /* Primary Button / Highlight: Gold in Dark Mode */
+  --primary: #C9A227;
+  --primary-foreground: #080F22;
+
+  /* Secondary: Deep Navy container */
+  --secondary: #14234C;
+  --secondary-foreground: #F8FAFC;
+
+  --muted: #101D3E;
+  /* Secondary Text: Cool Slate Gray */
+  --muted-foreground: #94A3B8;
+
+  /* Accent: Premium Gold */
+  --accent: #C9A227;
+  --accent-foreground: #080F22;
+
+  /* Deep Navy */
+  --navy: #0B132B;
+  --navy-soft: rgba(255, 255, 255, 0.08);
+
+  /* Premium Gold */
+  --gold: #C9A227;
+  --gold-soft: rgba(201, 162, 39, 0.16);
+  --gold-glow: rgba(201, 162, 39, 0.35);
+
+  --ivory: #FAF8F5;
+  --ivory-foreground: #080F22;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #F8FAFC;
+
+  /* Borders & Inputs */
+  --border: rgba(201, 162, 39, 0.20);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: rgba(201, 162, 39, 0.45);
+
+  --gradient-hero: radial-gradient(
+      circle at 18% 12%,
+      rgba(20, 35, 76, 0.65),
+      transparent 55%
+    ),
+    radial-gradient(circle at 85% 15%, rgba(201, 162, 39, 0.12), transparent 48%),
+    radial-gradient(circle at 50% 80%, rgba(13, 24, 54, 0.60), transparent 60%);
+
+  --gradient-gold: linear-gradient(
+    115deg,
+    #D4AF37,
+    #F5E6B3 45%,
+    #C9A227 70%,
+    #AA8012
+  );
+
+  --gradient-card: linear-gradient(
+    170deg,
+    #111C3A 0%,
+    #0B142D 100%
+  );
+
+  --shadow-luxe: 0 20px 50px -20px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(201, 162, 39, 0.18);
+  --shadow-gold: 0 20px 50px -20px rgba(201, 162, 39, 0.35), 0 0 0 1px rgba(201, 162, 39, 0.45);
 }
 
 @layer base {
@@ -135,11 +226,17 @@
     font-family: var(--font-display);
     font-weight: 500;
     letter-spacing: -0.015em;
+    color: var(--color-foreground);
   }
 
   ::selection {
-    background: oklch(0.76 0.105 87.5 / 35%);
-    color: #ffffff;
+    background: rgba(201, 162, 39, 0.25);
+    color: #0B132B;
+  }
+
+  .dark ::selection {
+    background: rgba(201, 162, 39, 0.35);
+    color: #FFFFFF;
   }
 }
 
@@ -155,16 +252,22 @@
 
   &:hover {
     transform: translateY(-4px);
-    border-color: oklch(0.76 0.105 87.5 / 45%);
+    border-color: rgba(201, 162, 39, 0.45);
     box-shadow: var(--shadow-gold);
   }
 }
 
 @utility glass-card {
-  background: oklch(0.24 0.05 260 / 55%);
-  border: 1px solid oklch(0.76 0.105 87.5 / 18%);
+  background: rgba(255, 255, 255, 0.90);
+  border: 1px solid rgba(201, 162, 39, 0.22);
   backdrop-filter: blur(14px);
-  box-shadow: 0 15px 35px -15px oklch(0 0 0 / 60%);
+  box-shadow: 0 10px 30px -10px rgba(11, 19, 43, 0.08);
+
+  &:is(.dark *) {
+    background: rgba(13, 24, 54, 0.85);
+    border: 1px solid rgba(201, 162, 39, 0.22);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.55);
+  }
 }
 
 @utility gold-text {
@@ -260,10 +363,10 @@
 
 @keyframes pulse-gold {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.76 0.105 87.5 / 40%);
+    box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.4);
   }
   50% {
-    box-shadow: 0 0 0 12px oklch(0.76 0.105 87.5 / 0%);
+    box-shadow: 0 0 0 12px rgba(201, 162, 39, 0);
   }
 }
 

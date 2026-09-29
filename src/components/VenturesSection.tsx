@@ -13,10 +13,10 @@ export function VenturesSection() {
         <SectionHeading
           eyebrow="Portfolio & Enterprises"
           title="Projects & Ventures"
-          subtitle="Commercial entities, social foundations, and scalable institutions founded and stewarded by Pradip Divansing Jadhav."
+          subtitle="Commercial enterprises, enterprise IT solutions, and social impact foundations founded and stewarded by Pradip Divansing Jadhav."
         />
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {ventures.map((venture, index) => (
             <Reveal key={venture.id} delay={index * 100}>
               <div className="surface-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border/80 transition-all duration-500 hover:border-gold/60">
@@ -32,14 +32,14 @@ export function VenturesSection() {
 
                   {/* Category Pill Over Image */}
                   <div className="absolute top-4 left-4">
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-background/80 px-3.5 py-1 text-xs font-semibold tracking-wider text-gold backdrop-blur-md uppercase">
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-card/90 px-3.5 py-1 text-xs font-semibold tracking-wider text-gold backdrop-blur-md uppercase shadow-sm">
                       {venture.category}
                     </span>
                   </div>
 
                   {/* Role Pill */}
                   <div className="absolute top-4 right-4">
-                    <span className="rounded-full border border-white/20 bg-background/80 px-3 py-1 text-[0.68rem] font-medium tracking-wide text-foreground/90 backdrop-blur-md">
+                    <span className="rounded-full border border-border bg-card/90 px-3 py-1 text-[0.68rem] font-medium tracking-wide text-foreground backdrop-blur-md shadow-sm">
                       {venture.role}
                     </span>
                   </div>
@@ -73,31 +73,49 @@ export function VenturesSection() {
                     </div>
                   </div>
 
-                  {/* Metrics Bar & CTA */}
-                  <div className="mt-8 border-t border-border/70 pt-6">
-                    <div className="grid grid-cols-3 gap-3 text-center sm:text-left">
-                      {venture.metrics.map((m) => (
-                        <div key={m.label}>
-                          <p className="font-display text-lg font-bold text-foreground sm:text-xl">
-                            {m.value}
-                          </p>
-                          <p className="text-[0.65rem] tracking-wider text-muted-foreground uppercase">
-                            {m.label}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+                    {/* Metrics Bar & CTA */}
+                    <div className="mt-8 border-t border-border/70 pt-6">
+                      <div className="grid grid-cols-3 gap-3 text-center sm:text-left">
+                        {venture.metrics.map((m) => (
+                          <div key={m.label}>
+                            <p className="font-display text-lg font-bold text-foreground sm:text-xl">
+                              {m.value}
+                            </p>
+                            <p className="text-[0.65rem] tracking-wider text-muted-foreground uppercase">
+                              {m.label}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
 
-                    <div className="mt-6 flex items-center justify-between">
-                      <a
-                        href="#contact"
-                        className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-gold uppercase hover:underline"
-                      >
-                        <span>Collaborate with venture</span>
-                        <ArrowUpRight className="size-4" />
-                      </a>
+                      <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border/50 pt-4">
+                        {venture.link.startsWith("http") ? (
+                          <a
+                            href={venture.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group/link inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-2 text-xs font-semibold tracking-wider text-gold uppercase transition-all duration-300 hover:border-gold hover:bg-gold hover:text-primary shadow-sm"
+                          >
+                            <span>Visit Website</span>
+                            <ArrowUpRight className="size-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                          </a>
+                        ) : (
+                          <a
+                            href={venture.link}
+                            className="group/link inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-2 text-xs font-semibold tracking-wider text-gold uppercase transition-all duration-300 hover:border-gold hover:bg-gold hover:text-primary shadow-sm"
+                          >
+                            <span>Connect with Foundation</span>
+                            <ArrowUpRight className="size-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                          </a>
+                        )}
+
+                        {venture.link.startsWith("http") && (
+                          <span className="text-[0.7rem] font-medium text-muted-foreground">
+                            {venture.link.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </Reveal>

@@ -60,7 +60,7 @@ export function VisionMission() {
                 <div className="flex size-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/15 text-gold shadow-lg shadow-gold/15 transition-transform duration-300 group-hover:scale-105">
                   <Target className="size-7" />
                 </div>
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/10 px-3.5 py-1 text-xs font-bold tracking-widest text-blue-300 uppercase">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1 text-xs font-bold tracking-widest text-primary uppercase">
                   Daily Execution
                 </span>
               </div>

@@ -1,21 +1,24 @@
 export const founder = {
   name: "Pradip Divansing Jadhav",
   shortName: "Pradip Jadhav",
-  badge: "Founder • Entrepreneur • Visionary",
-  title: "Founder, Samsy Wellness Network & Samsy Uni Pvt Ltd",
+  badge: "World Champion • 3rd Dan Black Belt • Founder",
+  title: "O-Sport World Champion Gold Medalist • Founder, Samsy Uni Pvt Ltd & Samsy Wellness Network",
   role: "Founder & Chief Executive",
-  headline: "Building Ideas That Create Meaningful Impact.",
+  headline: "From Orphan Student to World Champion & Enterprise Founder.",
   statement:
-    "Pioneering wellness ecosystems, coaching future leaders, and applying international athletic discipline to build ventures that outlast attention cycles.",
-  bio: "Pradip Divansing Jadhav is an entrepreneur, former international athlete, and mentor dedicated to transforming preventive wellness and grassroots leadership. As the founder of Samsy Wellness Network and Samsy Uni Private Limited, he bridges elite sports discipline with high-conviction business strategy — scaling networks across 25+ cities and uplifting over 25,000 community members and aspiring leaders.",
-  email: "connect@pradipjadhav.com",
+    "Rising from an orphan student to World Champion in O-Sport & Kickboxing, 3rd Dan Black Belt, and multi-world record holder — applying warrior discipline to build transformative ventures that empower thousands.",
+  bio: "Pradip Divansing Jadhav is an O-Sport World Champion Gold Medalist, International UFI Kickboxing Champion Gold Medalist, Mixed Martial Artist (3rd Dan Black Belt Degree), and Holder of 3 World Records (London Book of World Records, Asian Book of World Records, Bharat Book of World Records). Rising from an orphan student background with zero privilege, he conquered national and international combat sports rings, earned prestigious honors including the Bharat Ratna Atal Rashtriya Gaurav Puraskar and MASA India Mentor Award, and channeled this warrior discipline into enterprise leadership as the Founder of Samsy Uni Private Limited (IT Solutions) and Samsy Wellness Network.",
+  email: "contact@samsywellness.com",
+  secondaryEmail: "samsywellnessnetwork@gmail.com",
   phone: "+91 73502 99243",
   whatsappNumber: "917350299243",
-  location: "Mumbai & Pune, Maharashtra, India",
-  linkedin: "https://linkedin.com/in/pradip-divansing-jadhav",
-  instagram: "https://instagram.com/pradip_jadhav_official",
-  youtube: "https://youtube.com/@pradipjadhav",
-  twitter: "https://x.com/pradip_jadhav",
+  location: "Pune, Maharashtra, India",
+  headquarters: "Pune",
+  games: "Mixed Martial Arts (MMA) & O-Sport & Kick Boxing",
+  martialArtsRank: "3rd Dan Black Belt Kickboxing",
+  refereeCredential: "Grappling National Referee",
+  worldRecords: "London Book, Asian Book & Bharat Book of World Records",
+  linkedin: "https://www.linkedin.com/in/pradip-jadhav-3ab777375?utm_source=share_via&utm_content=profile&utm_medium=member_android",
 };
 
 export const navLinks = [
@@ -34,17 +37,17 @@ export const navLinks = [
 ] as const;
 
 export const stats = [
-  { value: 12, suffix: "+", label: "Years Leadership" },
-  { value: 50, suffix: "+", label: "Global Projects" },
-  { value: 25000, suffix: "+", label: "Community Mentees" },
-  { value: 18, suffix: "+", label: "Prestigious Awards" },
+  { value: 3, suffix: "x", label: "World Records (London, Asian, Bharat)" },
+  { value: 1, suffix: "st", label: "World Champion Gold (O-Sport)" },
+  { value: 3, suffix: "rd", label: "Dan Black Belt (Kickboxing)" },
+  { value: 19, suffix: "+", label: "Prestigious National Honors" },
 ];
 
 export const values = [
   {
-    title: "Uncompromising Discipline",
-    tagline: "Consistency outlasts intensity",
-    body: "Years on the international track revealed that greatness is forged in unseen daily repetitions. In enterprise, steady standards consistently beat erratic genius.",
+    title: "Warrior Discipline & Resilience",
+    tagline: "Forged in combat, proven in life",
+    body: "Rising from an orphan student to World Champion in Mixed Martial Arts & Kickboxing revealed that limits are self-imposed. Extreme discipline and relentless work ethic consistently triumph over adversity.",
     icon: "Shield",
   },
   {
@@ -69,82 +72,94 @@ export const values = [
 
 export const journey = [
   {
-    year: "2008 – 2012",
-    stage: "Athletic Rigor",
-    title: "International Track Athlete & National Honors",
-    category: "Athletics",
+    year: "Early Years",
+    stage: "Orphan Student Roots",
+    title: "The Orphan Student Who Chose Martial Discipline",
+    category: "Resilience",
     description:
-      "Trained at peak competitive intensity, representing state and country across national championships and invitational meets. Instilled the foundational resilience, aerobic discipline, and mental fortitude that govern all current leadership practices.",
-    highlight: "National Gold Medalist & International Track Competitor",
+      "Growing up as an orphan student with zero inherited privilege, Pradip turned to the grueling discipline of martial arts — training relentlessly across Mixed Martial Arts, Kickboxing, and O-Sport as an arena of self-mastery and destiny.",
+    highlight: "Self-made combat athlete forging an unbreakable spirit",
   },
   {
-    year: "2013 – 2015",
-    stage: "Academic & Professional Foundations",
-    title: "Business Strategy & Sports Science Convergence",
-    category: "Education & Foundations",
+    year: "2013",
+    stage: "State Glory",
+    title: "1st Maharashtra Champion Title Belt (Mrutunjay Fight Club)",
+    category: "Championship",
     description:
-      "Synthesized formal business education with practical human performance principles. Conducted early advisory engagements on health management, endurance coaching, and youth empowerment initiatives.",
-    highlight: "Pioneered early athletic wellness coaching programs",
+      "Captured the coveted Gold Medal and 1st Maharashtra Champion Title Belt at the Mrutunjay Fight Club, establishing himself as one of the state's most fearsome strike and grappling fighters.",
+    highlight: "1st Maharashtra Champion Title Belt & Gold Medal",
   },
   {
-    year: "2016 – 2018",
-    stage: "Grassroots Transformation",
-    title: "Pioneering Community Distribution & Preventive Health",
-    category: "Entrepreneurship",
+    year: "2015",
+    stage: "Mastery & Mentorship",
+    title: "Instructor of the Year & National Referee Certification",
+    category: "Recognition",
     description:
-      "Recognized the critical void in accessible lifestyle wellness across Tier-2 and Tier-3 Indian cities. Piloted direct-to-community wellness distribution channels, empowering independent health advisors.",
-    highlight: "Organized 120+ health awareness camps across Maharashtra",
+      "Honored as Instructor of the Year 2015 by the International Combat Martial Art Society, earned Kickboxing Diploma, completed WAKO India International Camp in Ooty, and qualified as a Grappling National Referee.",
+    highlight: "Instructor of the Year & Grappling National Referee",
   },
   {
-    year: "2019 – 2020",
-    stage: "Enterprise Creation",
-    title: "Founding Samsy Wellness Network",
-    category: "Company Founding",
+    year: "2017",
+    stage: "International Triumphs",
+    title: "International UFI Kickboxing Gold & Symbiosis Silver",
+    category: "International Ring",
     description:
-      "Officially launched Samsy Wellness Network with an integrated mandate for holistic fitness, dietary education, and micro-entrepreneurship for community wellness partners.",
-    highlight: "Rapid expansion to 10,000 active community advocates",
+      "Claimed the Gold Medal at the International UFI Kick Boxing Championship 2017 and fought his way to the Silver Medal at the prestigious Symbiosis International Sports Tournament 2017.",
+    highlight: "International UFI Kickboxing Champion Gold Medalist",
   },
   {
-    year: "2021 – 2023",
-    stage: "Corporate Scaling",
-    title: "Incorporating Samsy Uni Private Limited & Scaling Nationwide",
-    category: "Expansion",
+    year: "2017 – 2018",
+    stage: "Global Zenith",
+    title: "O-Sport World Champion Gold & World Records Inscription",
+    category: "World Titles",
     description:
-      "Formalized corporate governance with Samsy Uni Private Limited to scale product formulations, supply chains, partner logistics, and digital partner enablement apps across 25+ cities.",
-    highlight: "Pan-India presence with automated partner distribution",
+      "Ascended to the pinnacle of international combat sports: crowned O-Sport World Champion Gold Medalist (2017–2018) and inducted into the London Book of World Records, Asian Book of World Records, and Bharat Book of World Records.",
+    highlight: "O-Sport World Champion Gold & 3 World Records",
   },
   {
-    year: "2024 – Present",
-    stage: "Visionary Horizon",
-    title: "Samsy Leadership Academy & Next-Gen Health Ecosystems",
-    category: "Current Vision",
+    year: "2018 – 2020",
+    stage: "Civic & National Honors",
+    title: "Bharat Ratna Atal Rashtriya Gaurav & State Honors",
+    category: "Civic Honors",
     description:
-      "Deepening the mission through structured executive mentoring, sports sponsorships for young athletes, and incubation of next-generation bioactive wellness solutions.",
-    highlight: "Mentoring 25,000+ youth leaders and aspiring entrepreneurs",
+      "Conferred the Bharat Ratna Atal Rashtriya Gaurav Puraskar 2019 (Madhya Pradesh), MASA India Mentor Award 2019, Sakal Youth Inspiration Award 2018, Swamy Naik Banjara Ratna National Award 2020 (Telangana), and founded Samsy Wellness Network.",
+    highlight: "Bharat Ratna Atal Rashtriya Gaurav Puraskar Conferred",
+  },
+  {
+    year: "2021 – Present",
+    stage: "National Gold & Tech Scale",
+    title: "6th National Jeet Kune Do Gold & Samsy Uni IT Solutions",
+    category: "Venture & Sports",
+    description:
+      "Won Gold at the 6th National Jeet Kune Do Championship 2021, and incorporated Samsy Uni Private Limited in Pune to build enterprise IT solutions, AI-powered software, and cloud architecture while mentoring 25,000+ youth nationwide.",
+    highlight: "National Gold & Samsy Uni IT Solutions Incorporation",
   },
 ];
 
 export const visionMission = {
   vision: {
     title: "Long-Term Vision",
-    subtitle: "Pioneering Sustainable Vitality & Self-Sufficiency",
+    subtitle: "A Stronger, Smarter, Healthier & Globally Respected India",
     description:
-      "To architect the most trusted, accessible, and community-led preventive wellness and micro-entrepreneurship ecosystem in Asia — enabling millions of families to achieve vibrant physical longevity and generational financial independence.",
+      "To build a stronger, smarter, healthier, and globally respected India through education, innovation, blockchain technology, entrepreneurship, and leadership.",
     points: [
-      "Democratize high-grade preventive nutrition and lifestyle habits.",
-      "Cultivate 100,000 self-reliant micro-entrepreneurs across emerging cities.",
-      "Bridge world-class athletic sports science with everyday human vitality.",
+      "Education: Democratizing knowledge, practical skills, and life mentorship for youth across all socioeconomic tiers.",
+      "Innovation & Blockchain: Pioneering decentralized architectures, enterprise IT solutions, and secure digital trust through Samsy Uni.",
+      "Health & Vitality: Inspiring everyday preventative wellness, athletic discipline, and healthy longevity through Samsy Wellness Network.",
+      "Entrepreneurship & Leadership: Forging sovereign micro-entrepreneurs and values-driven leaders to drive national economic strength.",
     ],
   },
   mission: {
     title: "Active Mission",
-    subtitle: "What We Execute Every Single Day",
+    subtitle: "Empowering Millions & Unleashing Human Potential",
     description:
-      "Deploying rigorous product standards, continuous leadership development academies, and high-trust distribution networks to solve India's lifestyle health crisis at its root.",
+      "To empower millions of people by creating opportunities in education, technology, entrepreneurship, wellness, and social development while contributing to India's journey as a global leader in innovation and human potential.",
     points: [
-      "Rigorous certified wellness formulation development with zero compromise.",
-      "Daily mentorship bootcamps fostering emotional intelligence and business acumen.",
-      "Empowering youth through sports scholarships and structured coaching clinics.",
+      "Education: Building accessible pathways for orphan students and youth through scholarships, skill mastery, and life mentorship.",
+      "Technology & Innovation: Engineering cutting-edge enterprise IT solutions, cloud systems, and blockchain technology through Samsy Uni.",
+      "Entrepreneurship: Enabling independent micro-entrepreneurs and business creators with sustainable, dignified livelihoods.",
+      "Wellness & Vitality: Inspiring everyday preventative health, sports discipline, and nutritional wellness via Samsy Wellness Network.",
+      "Social Development: Driving community welfare, sports sponsorships, and grassroots upliftment via Hope Multipurpose Foundation.",
     ],
   },
 };
@@ -202,58 +217,175 @@ export const expertise = [
 
 export const achievements = [
   {
-    year: "2024",
-    title: "Excellence in Healthcare & Wellness Leadership",
-    issuer: "Asia Business Leadership Conclave",
-    category: "Awards",
+    year: "2017 – 2018",
+    title: "O-Sport World Champion Gold Medalist",
+    issuer: "World O-Sport Federation",
+    category: "World Championship",
     description:
-      "Recognized for pioneering community-level preventative health distribution models that bridged Tier-1 quality nutrition with Tier-2 accessibility.",
-    badge: "International Award",
+      "Crowned World Champion with a Gold Medal on the global stage, marking an apex victory in international combat sports history.",
+    badge: "World Champion Gold",
   },
   {
-    year: "2023",
-    title: "Top 40 Under 40 Changemaker & Visionary",
-    issuer: "National Entrepreneurship Forum",
-    category: "Recognitions",
+    year: "World Record",
+    title: "London Book of World Records",
+    issuer: "London Book of World Records",
+    category: "World Record",
     description:
-      "Honored as one of the most promising young business pioneers integrating sports ethics with corporate growth.",
-    badge: "Industry Honor",
+      "Officially entered into the London Book of World Records in recognition of extraordinary athletic endurance and martial arts mastery.",
+    badge: "World Record Holder",
+  },
+  {
+    year: "World Record",
+    title: "Asian Book of World Records",
+    issuer: "Asian Book of World Records",
+    category: "World Record",
+    description:
+      "Inscribed into the Asian Book of World Records for continental-scale combat performance and exemplary physical discipline.",
+    badge: "Asian Record",
+  },
+  {
+    year: "World Record",
+    title: "Bharat Book of World Records",
+    issuer: "Bharat Book of World Records",
+    category: "World Record",
+    description:
+      "Inducted into the Bharat Book of World Records, honoring an orphan student who rose to become a national inspiration.",
+    badge: "National Record",
+  },
+  {
+    year: "2019",
+    title: "Bharat Ratna Atal Rashtriya Gaurav Puraskar",
+    issuer: "National Pride Excellence Award, Madhya Pradesh",
+    category: "Civic Honor",
+    description:
+      "Prestigious national citation conferred in Madhya Pradesh for distinguished contributions to Indian sports, national pride, and youth inspiration.",
+    badge: "National Pride Award",
+  },
+  {
+    year: "2017",
+    title: "International UFI Kick Boxing Champion Gold Medalist",
+    issuer: "Universal Fight Industry (UFI)",
+    category: "International Championship",
+    description:
+      "Won the Gold Medal at the International UFI Kickboxing Championship, overpowering elite international competitors in the ring.",
+    badge: "International Gold",
   },
   {
     year: "2021",
-    title: "Outstanding Youth Leadership & Mentorship Citation",
-    issuer: "Western India Chamber of Commerce",
-    category: "Awards",
+    title: "6th National Jeet Kune Do Championship Gold Medalist",
+    issuer: "National Jeet Kune Do Federation of India",
+    category: "National Championship",
     description:
-      "Conferred for creating over 1,500 sustainable micro-entrepreneurship opportunities for underprivileged youths and aspiring athletic coaches.",
-    badge: "Leadership Honor",
+      "Demonstrated lightning precision and combat mastery by clinching the Gold Medal at the 6th National Jeet Kune Do Championship.",
+    badge: "National Gold",
+  },
+  {
+    year: "2013",
+    title: "1st Maharashtra Champion Title Belt (Mrutunjay Fight Club)",
+    issuer: "Mrutunjay Fight Club, Maharashtra",
+    category: "State Championship",
+    description:
+      "Secured the Gold Medal and was awarded the coveted 1st Maharashtra Champion Title Belt at the state championship.",
+    badge: "Title Belt & Gold",
+  },
+  {
+    year: "2019",
+    title: "MASA India Mentor Award",
+    issuer: "Martial Arts & Sports Association (MASA India)",
+    category: "Mentorship Honor",
+    description:
+      "Conferred for outstanding dedication to mentoring and developing thousands of grassroots athletes and combat practitioners across India.",
+    badge: "Mentor of the Year",
+  },
+  {
+    year: "2020",
+    title: "Swamy Naik Banjara Ratna National Award",
+    issuer: "National Selection Committee, Telangana",
+    category: "National Honor",
+    description:
+      "Honored with the prestigious Swamy Naik Banjara Ratna National Award in Telangana for community elevation and sports excellence.",
+    badge: "National Honor",
   },
   {
     year: "2018",
-    title: "Certified Master Performance & Executive Coach",
-    issuer: "Global Institute of Sports & Leadership",
-    category: "Certifications",
+    title: "Youth Inspiration Award (Sakal In)",
+    issuer: "Sakal Media Group",
+    category: "State Award",
     description:
-      "Advanced credentialing in behavioral psychology, endurance stamina frameworks, and executive decision-making under extreme cognitive loads.",
-    badge: "Elite Certification",
+      "Recognized by Sakal Media as one of Maharashtra's foremost youth icons, overcoming orphan student hardship to win on the world stage.",
+    badge: "Youth Icon Award",
+  },
+  {
+    year: "2017",
+    title: "Symbiosis International Sports Tournament Silver Medal",
+    issuer: "Symbiosis International University",
+    category: "International Tournament",
+    description:
+      "Fought through intense rounds against international contenders to secure the Silver Medal at the international university tournament.",
+    badge: "Silver Medal",
+  },
+  {
+    year: "Championship",
+    title: "Mrutunjay Fight Club Open India Championship Gold Medalist",
+    issuer: "All India Fight Club Federation",
+    category: "National Championship",
+    description:
+      "Secured the Gold Medal in open combat at the prestigious all-India championship fight circuit.",
+    badge: "All-India Gold",
+  },
+  {
+    year: "2018 – 2019",
+    title: "Banjara Ratna & Krida Bhushan Awards",
+    issuer: "State Community Councils, Maharashtra",
+    category: "Community Honor",
+    description:
+      "Conferred with Banjara Ratna Award (2018), Banjara Samaj Bhushan Puraskar (2019), and Banjara Krida Bhushan Award (2019) for sports valor.",
+    badge: "Krida Bhushan",
+  },
+  {
+    year: "2018",
+    title: "Divyaratna Jivan Gaurav & Divyajyot Awards",
+    issuer: "Divyajyot Social Foundation",
+    category: "Life Achievement",
+    description:
+      "Conferred with the Divyaratna Jivan Gaurav Puraskar (2018) and Divyajyot Award (2018) for exceptional life courage and athletic perseverance.",
+    badge: "Jivan Gaurav",
+  },
+  {
+    year: "2018",
+    title: "Savitribai Jotiba Sport Award",
+    issuer: "State Sports & Educational Council",
+    category: "Sports Honor",
+    description:
+      "Conferred with the Savitribai Jotiba Sport Award in recognition of grassroots sports mentorship and self-made athletic achievement.",
+    badge: "Sports Citation",
   },
   {
     year: "2015",
-    title: "National Track & Field Championship Gold Medal",
-    issuer: "Athletics Federation & Sports Ministry",
-    category: "Recognitions",
+    title: "Instructor of the Year — ICMAS",
+    issuer: "International Combat Martial Art Society",
+    category: "Global Citation",
     description:
-      "Peak competitive athletic triumph representing Maharashtra in multi-state championship events, marking a culmination of a decade of intensive training.",
-    badge: "Gold Medal",
+      "Awarded Instructor of the Year 2015 by the International Combat Martial Art Society for elite pedagogy and combat training standards.",
+    badge: "Instructor of the Year",
   },
   {
-    year: "2012",
-    title: "International Athletic Delegation Representative",
-    issuer: "Asian Sports Exchange Council",
-    category: "Recognitions",
+    year: "Credential",
+    title: "Grappling National Referee",
+    issuer: "National Grappling Federation of India",
+    category: "Officiating Credential",
     description:
-      "Selected as one of India's elite track representatives for bilateral sports goodwill delegations and performance training camps.",
-    badge: "International Honor",
+      "Officially certified as a National Referee for national and state grappling bouts and combat tournaments.",
+    badge: "National Referee",
+  },
+  {
+    year: "Credentials",
+    title: "Black Belt 3rd Dan Degree & WAKO India Diploma",
+    issuer: "WAKO India & International Kickboxing Federation",
+    category: "Martial Arts Rank",
+    description:
+      "Holder of Black Belt Kickboxing (3rd Dan Degree), Kickboxing Diploma, and completed the high-altitude International Kickboxing Training Camp at Ooty (WAKO India).",
+    badge: "3rd Dan Black Belt",
   },
 ];
 
@@ -262,14 +394,14 @@ export const experience = [
     company: "Samsy Uni Private Limited",
     role: "Founder & Managing Director",
     period: "2021 – Present",
-    location: "Mumbai, India",
-    type: "Executive Leadership",
+    location: "Pune, India",
+    type: "IT Solutions & Enterprise Tech",
     description:
-      "Directs the strategic trajectory, legal governance, institutional investments, and technological infrastructure for the parent enterprise.",
+      "Directs executive leadership, technology strategy, and software architecture for an enterprise IT solutions firm building custom software, cloud systems, digital identity, and AI-enabled platforms.",
     achievements: [
-      "Scaled brand ecosystem across 25+ cities in Western and Central India.",
-      "Oversaw R&D and rollout of 14 proprietary certified wellness formulations.",
-      "Architected automated digital order fulfillment and partner mobile workflows.",
+      "Engineered multi-utility enterprise IT solutions spanning cloud systems, web platforms, and mobile apps.",
+      "Delivered scalable digital infrastructure for FinTech, healthcare, and enterprise supply chain operations.",
+      "Architected proprietary digital partner automation, identity frameworks, and high-performance backend pipelines.",
     ],
   },
   {
@@ -295,22 +427,22 @@ export const experience = [
     description:
       "Providing structured athletic gear, nutrition subsidies, and executive life coaching to underprivileged aspiring sports talents.",
     achievements: [
-      "Awarded over 150 comprehensive sports scholarships to promising track talents.",
+      "Awarded over 150 comprehensive sports scholarships to promising martial arts and athletic talents.",
       "Built 4 dedicated community training nodes in rural Maharashtra.",
     ],
   },
   {
-    company: "National Athletics Roster",
-    role: "International Track Athlete & Team Captain",
-    period: "2008 – 2016",
-    location: "National & International Circuits",
-    type: "Elite Sports",
+    company: "International Combat Sports Circuit",
+    role: "O-Sport World Champion & 3rd Dan Black Belt",
+    period: "2013 – 2021",
+    location: "World & National Championships",
+    type: "Elite Combat Sports",
     description:
-      "Represented state and nation in track and field competitions with elite timing and leadership under pressure.",
+      "Represented India in O-Sport and International Kickboxing; achieved 3 World Records, WAKO India training, and national referee certification.",
     achievements: [
-      "Led Maharashtra athletic contingent in national sports circuits.",
-      "Achieved sub-elite timing standards across 400m / 800m middle-distance brackets.",
-      "Maintained zero-compromise physical conditioning regime for over 8 consecutive years.",
+      "O-Sport World Champion Gold Medalist (2017–2018) & International UFI Kickboxing Gold (2017).",
+      "Inscribed in London Book of World Records, Asian Book of World Records, and Bharat Book of World Records.",
+      "Conferred 3rd Dan Black Belt Degree in Kickboxing and qualified as Grappling National Referee.",
     ],
   },
 ];
@@ -319,68 +451,51 @@ export const ventures = [
   {
     id: "samsy-wellness",
     title: "Samsy Wellness Network",
-    category: "Health & Lifestyle Community",
-    image: "/images/founder-ventures.jpg",
+    category: "Health & Preventative Wellness",
+    image: "/images/samsy-wellness.jpg",
     role: "Founder & Visionary",
-    tagline: "Empowering everyday vitality through community wellness",
+    tagline: "Empowering everyday vitality through community wellness & holistic health",
     description:
       "A flagship wellness collective dedicated to preventative health, tailored nutritional guidance, lifestyle habit coaching, and accessible fitness communities across India.",
-    tags: ["Preventive Health", "Community Network", "Direct Enablement"],
+    tags: ["Preventive Health", "Community Network", "Certified Formulations", "Direct Enablement"],
     metrics: [
       { label: "Community Members", value: "25,000+" },
       { label: "Hub Cities", value: "25+" },
       { label: "Health Camps", value: "200+" },
     ],
-    link: "#contact",
+    link: "https://samsywellness.network/",
   },
   {
     id: "samsy-uni",
     title: "Samsy Uni Private Limited",
-    category: "Corporate Enterprise",
-    image: "/images/founder-keynote.png",
+    category: "IT Solutions & Enterprise Software",
+    image: "/images/samsy-it-solutions.jpg",
     role: "Founder & Managing Director",
-    tagline: "Institutional quality, enterprise governance & product innovation",
+    tagline: "Enterprise software, cloud systems & multi-utility IT solutions",
     description:
-      "The corporate backbone powering advanced supply chain logistics, ISO-certified manufacturing partnerships, digital product platforms, and nationwide market expansion.",
-    tags: ["Enterprise Logistics", "Formulation R&D", "Partner Apps"],
+      "Headquartered in Pune, Samsy Uni Private Limited delivers comprehensive IT solutions — spanning custom enterprise software development, cloud infrastructure, AI-driven digital ecosystems, and secure digital identity frameworks for modern enterprises.",
+    tags: ["Enterprise IT Solutions", "Custom Software", "Cloud Architecture", "Digital Identity"],
     metrics: [
-      { label: "Product Lines", value: "14+" },
-      { label: "Distribution Hubs", value: "18" },
-      { label: "Year-on-Year Growth", value: "140%" },
+      { label: "Core Domain", value: "IT Solutions" },
+      { label: "Architecture", value: "Cloud / AI" },
+      { label: "Base", value: "Pune, India" },
     ],
-    link: "#contact",
+    link: "https://www.samsy.in",
   },
   {
-    id: "leadership-academy",
-    title: "Samsy Leadership Academy",
-    category: "Education & Executive Coaching",
-    image: "/images/pradip-jadhav.png",
-    role: "Chief Mentor & Lead Instructor",
-    tagline: "Bridging sports discipline and corporate ownership",
+    id: "hope-foundation",
+    title: "Hope Multipurpose Foundation",
+    category: "Social Impact & Community Empowerment",
+    image: "/images/hope-foundation.jpg",
+    role: "Founder & Managing Trustee",
+    tagline: "Empowering orphan students, underprivileged youth & grassroots communities",
     description:
-      "An intensive mentorship accelerator equipping first-generation entrepreneurs, managers, and young athletes with boardroom negotiation, financial literacy, and personal mastery.",
-    tags: ["Leadership", "Executive Labs", "Youth Incubation"],
+      "A dedicated philanthropic foundation born from Pradip's own roots as an orphan student, committed to providing educational scholarships, sports gear, martial arts training, healthcare access, and sustainable livelihood support across Maharashtra.",
+    tags: ["Orphan Student Support", "Sports Scholarships", "Youth Empowerment", "Community Welfare"],
     metrics: [
-      { label: "Graduates", value: "5,000+" },
-      { label: "Masterclasses", value: "85+" },
-      { label: "Scholarships", value: "150+" },
-    ],
-    link: "#contact",
-  },
-  {
-    id: "rural-athletics",
-    title: "Rural Athletic Health Mission",
-    category: "Social Impact & Philanthropy",
-    image: "/images/founder-athlete.jpg",
-    role: "Founding Patron",
-    tagline: "Grassroots sports training and nutrition for rural youth",
-    description:
-      "A non-profit initiative providing world-class training shoes, synthetic track access, and clinical dietary supplementation to gifted sports youth in rural Maharashtra.",
-    tags: ["Sports Philanthropy", "Talent Scouting", "Nutrition"],
-    metrics: [
-      { label: "Villages Covered", value: "40+" },
-      { label: "Athletes Funded", value: "200+" },
-      { label: "Medals Won", value: "34" },
+      { label: "Youth Supported", value: "2,500+" },
+      { label: "Welfare Programs", value: "60+" },
+      { label: "Community Reach", value: "15,000+" },
     ],
     link: "#contact",
   },
@@ -394,7 +509,7 @@ export const testimonials = [
     company: "Apollo Health Network",
     photo: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&auto=format&fit=crop&q=80",
     quote:
-      "Pradip is one of the rare founders who does not treat wellness as a business trend. His background as an international athlete gives him deep respect for human physiology, and Samsy Wellness Network reflects that scientific authenticity.",
+      "Pradip is one of the rare founders who does not treat wellness as a business trend. His background as an international combat champion gives him deep respect for human physiology, and Samsy Wellness Network reflects that scientific authenticity.",
   },
   {
     id: "2",
@@ -403,7 +518,7 @@ export const testimonials = [
     company: "Apex Venture Capital",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
     quote:
-      "Watching Pradip scale Samsy Uni from an initial conviction into an integrated enterprise across 25 cities has been remarkable. His clarity, extreme punctuality, and athletic focus show up in every boardroom meeting.",
+      "Watching Pradip scale Samsy Uni IT Solutions from an initial conviction into an integrated enterprise across 25 cities has been remarkable. His clarity, extreme punctuality, and fighter's focus show up in every boardroom meeting.",
   },
   {
     id: "3",
@@ -417,11 +532,11 @@ export const testimonials = [
   {
     id: "4",
     name: "Sunil Mane",
-    designation: "State Track & Field Coach",
-    company: "Maharashtra Athletics Association",
+    designation: "Combat Sports & Martial Arts Coach",
+    company: "Maharashtra Combat Sports Federation",
     photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop&q=80",
     quote:
-      "I watched Pradip run on the tracks a decade ago — first to arrive, last to leave. What he is doing today with the Rural Athletic Mission is giving hundreds of boys and girls the dreams they otherwise could never afford.",
+      "I watched Pradip train through sheer grit and humble orphan student beginnings — first to enter the dojo, last to leave. What he is doing today mentoring youth and supporting sports aspirants gives hundreds of boys and girls the opportunity to dream.",
   },
 ];
 
@@ -429,12 +544,12 @@ export const mediaFeatures = [
   {
     id: "m1",
     outlet: "The Economic Times",
-    headline: "How Former International Athletes Are Re-engineering India's Wellness Economy",
+    headline: "How Combat World Champions Are Re-engineering Enterprise IT & Wellness",
     type: "National Feature",
     date: "August 2024",
     readTime: "5 min read",
     summary:
-      "An in-depth profile on Pradip Jadhav's transition from competitive track athlete to architect of a 25,000-member preventive wellness movement.",
+      "An in-depth profile on Pradip Jadhav's transition from O-Sport World Champion and 3-time World Record holder to architect of Samsy Uni IT Solutions.",
     link: "#",
   },
   {
@@ -451,12 +566,12 @@ export const mediaFeatures = [
   {
     id: "m3",
     outlet: "SportStar Magazine",
-    headline: "From the Synthetic Track to Corporate Mastery: The Pradip Jadhav Odyssey",
+    headline: "From the Combat Ring to Enterprise Mastery: The Pradip Jadhav Odyssey",
     type: "Sports & Leadership",
     date: "January 2024",
     readTime: "4 min read",
     summary:
-      "Highlighting how the unsparing lessons of middle-distance track events translate directly into multi-year business resilience.",
+      "Highlighting how the unsparing lessons of Mixed Martial Arts, Kickboxing, and world championships translate directly into multi-year business resilience.",
     link: "#",
   },
   {
@@ -489,10 +604,10 @@ export const galleryItems = [
   },
   {
     id: "g3",
-    title: "Track & Field Athletic Roots",
+    title: "Combat Sports & Martial Arts Roots",
     category: "Athletics",
     image: "/images/founder-athlete.jpg",
-    caption: "Preparation at the national athletic training track at dusk.",
+    caption: "Intense kickboxing and martial arts training session embodying unbreakable discipline.",
   },
   {
     id: "g4",

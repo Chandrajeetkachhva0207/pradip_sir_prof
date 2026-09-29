@@ -13,7 +13,7 @@ export const Route = createFileRoute("/companies")({
       {
         name: "description",
         content:
-          "Samsy Wellness Network, Samsy Uni Private Limited, Samsy Leadership Academy — the high-impact ventures founded and led by Pradip Divansing Jadhav.",
+          "Samsy Wellness Network, Samsy Uni Private Limited (IT Solutions), and Hope Multipurpose Foundation — the ventures founded and led by Pradip Divansing Jadhav.",
       },
       {
         property: "og:title",
@@ -22,9 +22,9 @@ export const Route = createFileRoute("/companies")({
       {
         property: "og:description",
         content:
-          "Samsy Wellness Network, Samsy Uni Private Limited, Samsy Leadership Academy — the high-impact ventures founded and led by Pradip Divansing Jadhav.",
+          "Samsy Wellness Network, Samsy Uni Private Limited (IT Solutions), and Hope Multipurpose Foundation — the ventures founded and led by Pradip Divansing Jadhav.",
       },
-      { property: "og:image", content: "/images/founder-ventures.jpg" },
+      { property: "og:image", content: "/images/samsy-it-solutions.jpg" },
     ],
   }),
   component: Companies,
@@ -40,7 +40,7 @@ function Companies() {
             Ventures Built for <span className="gold-text">Generational Impact</span>
           </>
         }
-        subtitle="Samsy Wellness Network and Samsy Uni Private Limited, both founded, capitalized, and directed by Pradip Divansing Jadhav."
+        subtitle="Samsy Uni Private Limited (Enterprise IT Solutions), Samsy Wellness Network, and Hope Multipurpose Foundation, founded and directed by Pradip Divansing Jadhav."
       />
 
       <VenturesSection />
@@ -55,7 +55,7 @@ function Companies() {
             </h2>
             <div className="gold-rule mt-6" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Across all Samsy initiatives, executive governance is paired with active field presence. From direct distributor mentorship bootcamps and formulation facility audits to grassroots youth track camps — Pradip believes credibility is earned on the ground.
+              Across all Samsy initiatives, executive governance is paired with active field presence. From direct software engineering reviews and distributor mentorship bootcamps to grassroots youth martial arts and sports camps — Pradip believes credibility is earned on the ground.
             </p>
             <div className="mt-8 space-y-3">
               <div className="flex items-center gap-3 text-sm text-foreground/90">

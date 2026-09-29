@@ -16,13 +16,13 @@ export function AboutSection() {
     <section id="about" className="relative overflow-hidden py-24 lg:py-32">
       {/* Background ambient mesh */}
       <div className="pointer-events-none absolute top-1/4 right-0 size-96 rounded-full bg-gold/5 blur-[120px]" />
-      <div className="pointer-events-none absolute bottom-0 left-10 size-96 rounded-full bg-blue-600/5 blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 left-10 size-96 rounded-full bg-primary/5 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Founder Biography & Values"
-          title="From the Discipline of Track to Executive Mastery"
-          subtitle="How an international athletic career forged the relentless standard behind high-growth wellness enterprises."
+          title="From Combat Champion to Enterprise Leader"
+          subtitle="How an international combat sports career and orphan student resilience forged the relentless standard behind enterprise ventures."
         />
 
         {/* Split Screen Layout */}
@@ -32,24 +32,24 @@ export function AboutSection() {
             <Reveal className="relative">
               <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-gold/20 via-gold/5 to-transparent blur-2xl" />
 
-              <div className="zoom-frame relative overflow-hidden rounded-3xl border border-gold/30 bg-card shadow-2xl shadow-black/60">
+              <div className="zoom-frame relative overflow-hidden rounded-3xl border border-gold/30 bg-card shadow-2xl shadow-primary/10">
                 <img
                   src="/images/founder-athlete.png"
-                  alt="Pradip Divansing Jadhav — Athletic Foundations & Discipline"
+                  alt="Pradip Divansing Jadhav — O-Sport World Champion & 3rd Dan Black Belt"
                   className="h-[700px] w-full object-cover object-center"
                   loading="lazy"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/90 via-background/15 to-transparent" />
 
-                <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-gold/20 bg-background/80 p-5 backdrop-blur-xl">
+                <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-gold/25 bg-card/90 p-5 shadow-lg shadow-primary/5 backdrop-blur-xl">
                   <div className="flex items-center gap-2 text-gold">
                     <CheckCircle2 className="size-4" />
                     <span className="text-[0.68rem] font-semibold tracking-widest uppercase">
-                      Athletic Lineage
+                      Combat Mastery & Resilience
                     </span>
                   </div>
                   <p className="mt-2 text-sm font-medium text-foreground">
-                    "Track teaches you that fatigue is a suggestion. Real progress happens in the repetitions that nobody applauds."
+                    "Growing up as an orphan student taught me that adversity is fuel. In combat and business, champions are forged when nobody is watching."
                   </p>
                   <p className="mt-2 text-[0.7rem] text-muted-foreground">
                     — Pradip Divansing Jadhav
@@ -67,21 +67,22 @@ export function AboutSection() {
                   <strong className="text-foreground font-semibold">
                     Pradip Divansing Jadhav
                   </strong>{" "}
-                  embodies the rare synthesis of athletic grit and visionary corporate execution.
-                  Having competed as an international track athlete representing India, he spent a decade
-                  mastering human endurance, metabolic discipline, and high-pressure focus.
+                  is an O-Sport World Champion Gold Medalist, International UFI Kickboxing Champion,
+                  Mixed Martial Artist (3rd Dan Black Belt Degree), and Holder of 3 World Records (London, Asian, Bharat).
+                  Rising from an orphan student background with zero inherited privilege, he mastered combat disciplines
+                  through relentless perseverance.
                 </p>
                 <p>
-                  Observing the alarming rise of preventable chronic ailments and economic insecurity across
-                  Indian communities, he founded{" "}
-                  <span className="text-gold font-medium">Samsy Wellness Network</span> and subsequently{" "}
-                  <span className="text-gold font-medium">Samsy Uni Private Limited</span>. His mission was
-                  unequivocal: build an accessible, community-led preventative health ecosystem powered by
-                  independent micro-entrepreneurs.
+                  Channeling his warrior work ethic into enterprise leadership, he founded{" "}
+                  <span className="text-gold font-medium">Samsy Uni Private Limited</span> (spearheading enterprise IT
+                  solutions, custom software development, and digital infrastructure) alongside{" "}
+                  <span className="text-gold font-medium">Samsy Wellness Network</span>. His mission is to deliver world-class
+                  technology solutions while empowering independent youth and micro-entrepreneurs.
                 </p>
                 <p>
-                  Today, his organizations span over 25 cities, providing livelihood, certified wellness training,
-                  and leadership coaching to more than 25,000 active individuals.
+                  Honored with the prestigious <span className="text-foreground font-medium">Bharat Ratna Atal Rashtriya Gaurav Puraskar</span>,{" "}
+                  <span className="text-foreground font-medium">MASA India Mentor Award</span>, and multiple state honors, he continues to train,
+                  referee national grappling competitions, and mentor over 25,000 active individuals across India.
                 </p>
               </div>
             </Reveal>
