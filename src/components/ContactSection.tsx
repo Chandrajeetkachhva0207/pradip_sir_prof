@@ -66,7 +66,7 @@ export function ContactSection() {
 
   const getWhatsAppUrl = (text: string) => {
     const rawNumber = founder.whatsappNumber || "917350299243";
-    return `https://wa.me/${rawNumber}?text=${encodeURIComponent(text)}`;
+    return `https://api.whatsapp.com/send?phone=${rawNumber}&text=${encodeURIComponent(text)}`;
   };
 
   const handleSubmit = (e: FormEvent) => {
@@ -98,23 +98,17 @@ export function ContactSection() {
 
     const whatsappUrl = getWhatsAppUrl(messageText);
 
-    setTimeout(() => {
-      try {
-        const opened = window.open(
-          whatsappUrl,
-          "_blank",
-          "noopener,noreferrer",
-        );
-
-        if (!opened) {
-          console.warn("Popup blocked; direct button provided in UI.");
-        }
-      } catch (err) {
-        console.error("Failed to open WhatsApp window", err);
+    // Open WhatsApp immediately in direct response to user interaction to bypass popup blockers
+    try {
+      const newTab = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
+        window.location.href = whatsappUrl;
       }
+    } catch {
+      window.location.href = whatsappUrl;
+    }
 
-      setStatus("success");
-    }, 450);
+    setStatus("success");
   };
 
   const handleCopyMessage = async () => {
@@ -217,25 +211,6 @@ export function ContactSection() {
                     </a>
                   </div>
 
-                  {/* Primary Email */}
-                  <a
-                    href={`mailto:${founder.email}`}
-                    className="group flex min-w-0 items-start gap-4 transition-colors"
-                  >
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gold/15 text-gold transition-all group-hover:bg-gold group-hover:text-primary-foreground">
-                      <Mail className="size-5" />
-                    </div>
-
-                    <div className="min-w-0">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        Executive Secretariat
-                      </p>
-
-                      <p className="mt-0.5 break-all text-sm font-medium text-foreground transition-colors group-hover:text-gold">
-                        {founder.email}
-                      </p>
-                    </div>
-                  </a>
 
                   {/* Samsy Wellness Network Email */}
                   <a

@@ -7,7 +7,6 @@ import { ExpertiseSection } from "@/components/ExpertiseSection";
 import { AchievementsSection } from "@/components/AchievementsSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { VenturesSection } from "@/components/VenturesSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { MediaSection } from "@/components/MediaSection";
 import { GallerySection } from "@/components/GallerySection";
 import { EventsSection } from "@/components/EventsSection";
@@ -69,10 +68,7 @@ function Home() {
       {/* 9. Projects / Ventures */}
       <VenturesSection />
 
-      {/* 10. Testimonials */}
-      <TestimonialsSection />
-
-      {/* 11. Media / Featured In */}
+      {/* 10. Media / Featured In */}
       <MediaSection />
 
       {/* 12. Gallery */}

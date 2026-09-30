@@ -124,13 +124,6 @@ export function SiteFooter() {
                 <span>{founder.email}</span>
               </a>
               <a
-                href={`mailto:${founder.secondaryEmail}`}
-                className="flex items-center gap-2 hover:text-gold transition-colors"
-              >
-                <Mail className="size-3.5 text-gold shrink-0" />
-                <span>{founder.secondaryEmail}</span>
-              </a>
-              <a
                 href={`https://wa.me/${founder.whatsappNumber || "917350299243"}?text=${encodeURIComponent("Hello Pradip sir, I am reaching out through your official portfolio website.")}`}
                 target="_blank"
                 rel="noopener noreferrer"

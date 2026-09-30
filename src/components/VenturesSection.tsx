@@ -28,21 +28,7 @@ export function VenturesSection() {
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-background/25 to-transparent" />
-
-                  {/* Category Pill Over Image */}
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-card/90 px-3.5 py-1 text-xs font-semibold tracking-wider text-gold backdrop-blur-md uppercase shadow-sm">
-                      {venture.category}
-                    </span>
-                  </div>
-
-                  {/* Role Pill */}
-                  <div className="absolute top-4 right-4">
-                    <span className="rounded-full border border-border bg-card/90 px-3 py-1 text-[0.68rem] font-medium tracking-wide text-foreground backdrop-blur-md shadow-sm">
-                      {venture.role}
-                    </span>
-                  </div>
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
                 </div>
 
                 {/* Content Area */}

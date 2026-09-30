@@ -8,7 +8,7 @@ export const founder = {
   statement:
     "Rising from an orphan student to World Champion in O-Sport & Kickboxing, 3rd Dan Black Belt, and multi-world record holder — applying warrior discipline to build transformative ventures that empower thousands.",
   bio: "Pradip Divansing Jadhav is an O-Sport World Champion Gold Medalist, International UFI Kickboxing Champion Gold Medalist, Mixed Martial Artist (3rd Dan Black Belt Degree), and Holder of 3 World Records (London Book of World Records, Asian Book of World Records, Bharat Book of World Records). Rising from an orphan student background with zero privilege, he conquered national and international combat sports rings, earned prestigious honors including the Bharat Ratna Atal Rashtriya Gaurav Puraskar and MASA India Mentor Award, and channeled this warrior discipline into enterprise leadership as the Founder of Samsy Uni Private Limited (IT Solutions) and Samsy Wellness Network.",
-  email: "contact@samsywellness.com",
+  email: "samsywellnessnetwork@gmail.com",
   secondaryEmail: "samsywellnessnetwork@gmail.com",
   phone: "+91 73502 99243",
   whatsappNumber: "917350299243",
@@ -30,7 +30,6 @@ export const navLinks = [
   { to: "/#achievements", label: "Achievements", href: "#achievements" },
   { to: "/#experience", label: "Experience", href: "#experience" },
   { to: "/#ventures", label: "Ventures", href: "#ventures" },
-  { to: "/#testimonials", label: "Testimonials", href: "#testimonials" },
   { to: "/#media", label: "Media", href: "#media" },
   { to: "/#gallery", label: "Gallery", href: "#gallery" },
   { to: "/#contact", label: "Contact", href: "#contact" },
@@ -607,7 +606,7 @@ export const galleryItems = [
     title: "Combat Sports & Martial Arts Roots",
     category: "Athletics",
     image: "/images/founder-athlete.jpg",
-    caption: "Intense kickboxing and martial arts training session embodying unbreakable discipline.",
+    caption: "Gold medal victory celebrating combat sports triumph and national pride representing India.",
   },
   {
     id: "g4",
@@ -625,10 +624,10 @@ export const galleryItems = [
   },
   {
     id: "g6",
-    title: "Youth Sports Equipment Distribution Drive",
+    title: "Swamy Naik Banjara Ratna National Award",
     category: "Awards",
-    image: "/images/athlet.jpg",
-    caption: "Presenting athletic sponsorships to young regional sprinters.",
+    image: "/images/founder-award.png",
+    caption: "Conferred with the prestigious Swamy Naik Banjara Ratna National Award in Telangana for distinguished contributions to Indian sports and youth leadership.",
   },
 ];
 

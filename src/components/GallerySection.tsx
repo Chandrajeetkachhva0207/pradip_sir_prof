@@ -47,40 +47,46 @@ export function GallerySection() {
             <Reveal key={item.id} delay={index * 60}>
               <div
                 onClick={() => setActiveImage(item)}
-                className="surface-card group relative cursor-pointer overflow-hidden rounded-2xl border border-border/70 transition-all duration-500 hover:border-gold/60 hover:shadow-gold"
+                className="surface-card group relative flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-border/70 transition-all duration-500 hover:border-gold/60 hover:shadow-gold"
               >
-                <div className="zoom-frame relative aspect-[4/3] w-full overflow-hidden bg-card">
-  <img
-    src={item.image}
-    alt={item.title}
-    className="size-full object-contain object-center transition-transform duration-700"
-    loading="lazy"
-  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
-
-                  {/* Zoom indicator on hover */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div className="flex size-12 items-center justify-center rounded-full bg-card/90 text-gold shadow-lg backdrop-blur-md">
-                      <ZoomIn className="size-5" />
-                    </div>
-                  </div>
+                <div className="zoom-frame relative aspect-4/3 w-full overflow-hidden bg-card/60 flex items-center justify-center p-2">
+                  {/* Subtle blurred background to eliminate harsh bars for vertical or non-standard photos */}
+                  <img
+                    src={item.image}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 size-full object-cover blur-lg opacity-25 scale-110"
+                  />
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="relative z-10 size-full object-contain object-center transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
 
                   {/* Badge */}
-                  <div className="absolute top-3 left-3">
+                  <div className="absolute top-3 left-3 z-20">
                     <span className="rounded-full border border-gold/30 bg-card/90 px-3 py-1 text-[0.65rem] font-bold tracking-wider text-gold uppercase backdrop-blur-md shadow-sm">
                       {item.category}
                     </span>
                   </div>
 
-                  {/* Bottom Caption */}
-                  <div className="absolute inset-x-4 bottom-4">
-                    <h3 className="font-display text-lg font-semibold text-foreground group-hover:text-gold transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="mt-1 line-clamp-1 text-xs text-muted-foreground">
-                      {item.caption}
-                    </p>
+                  {/* Zoom indicator on hover */}
+                  <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-background/20 backdrop-blur-[1px]">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-card/90 text-gold shadow-lg backdrop-blur-md border border-gold/40">
+                      <ZoomIn className="size-5" />
+                    </div>
                   </div>
+                </div>
+
+                {/* Caption Area Below Photo */}
+                <div className="flex flex-1 flex-col justify-between p-5 border-t border-border/60 bg-card/40">
+                  <h3 className="font-display text-base font-semibold leading-snug text-foreground group-hover:text-gold transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-2">
+                    {item.caption}
+                  </p>
                 </div>
               </div>
             </Reveal>

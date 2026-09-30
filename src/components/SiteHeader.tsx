@@ -13,7 +13,6 @@ const navItems = [
   { label: "Achievements", href: "#achievements", route: "/#achievements" },
   { label: "Experience", href: "#experience", route: "/#experience" },
   { label: "Ventures", href: "#ventures", route: "/companies" },
-  { label: "Testimonials", href: "#testimonials", route: "/#testimonials" },
   { label: "Media", href: "#media", route: "/#media" },
   { label: "Gallery", href: "#gallery", route: "/#gallery" },
   { label: "Contact", href: "#contact", route: "/#contact" },
