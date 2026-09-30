@@ -217,60 +217,6 @@ export const expertise = [
 
 export const achievements = [
   {
-    year: "2017 – 2018",
-    title: "O-Sport World Champion Gold Medalist",
-    issuer: "World O-Sport Federation",
-    category: "World Championship",
-    description:
-      "Crowned World Champion with a Gold Medal on the global stage, marking an apex victory in international combat sports history.",
-    badge: "World Champion Gold",
-  },
-  {
-    year: "World Record",
-    title: "London Book of World Records",
-    issuer: "London Book of World Records",
-    category: "World Record",
-    description:
-      "Officially entered into the London Book of World Records in recognition of extraordinary athletic endurance and martial arts mastery.",
-    badge: "World Record Holder",
-  },
-  {
-    year: "World Record",
-    title: "Asian Book of World Records",
-    issuer: "Asian Book of World Records",
-    category: "World Record",
-    description:
-      "Inscribed into the Asian Book of World Records for continental-scale combat performance and exemplary physical discipline.",
-    badge: "Asian Record",
-  },
-  {
-    year: "World Record",
-    title: "Bharat Book of World Records",
-    issuer: "Bharat Book of World Records",
-    category: "World Record",
-    description:
-      "Inducted into the Bharat Book of World Records, honoring an orphan student who rose to become a national inspiration.",
-    badge: "National Record",
-  },
-  {
-    year: "2019",
-    title: "Bharat Ratna Atal Rashtriya Gaurav Puraskar",
-    issuer: "National Pride Excellence Award, Madhya Pradesh",
-    category: "Civic Honor",
-    description:
-      "Prestigious national citation conferred in Madhya Pradesh for distinguished contributions to Indian sports, national pride, and youth inspiration.",
-    badge: "National Pride Award",
-  },
-  {
-    year: "2017",
-    title: "International UFI Kick Boxing Champion Gold Medalist",
-    issuer: "Universal Fight Industry (UFI)",
-    category: "International Championship",
-    description:
-      "Won the Gold Medal at the International UFI Kickboxing Championship, overpowering elite international competitors in the ring.",
-    badge: "International Gold",
-  },
-  {
     year: "2021",
     title: "6th National Jeet Kune Do Championship Gold Medalist",
     issuer: "National Jeet Kune Do Federation of India",
@@ -278,24 +224,6 @@ export const achievements = [
     description:
       "Demonstrated lightning precision and combat mastery by clinching the Gold Medal at the 6th National Jeet Kune Do Championship.",
     badge: "National Gold",
-  },
-  {
-    year: "2013",
-    title: "1st Maharashtra Champion Title Belt (Mrutunjay Fight Club)",
-    issuer: "Mrutunjay Fight Club, Maharashtra",
-    category: "State Championship",
-    description:
-      "Secured the Gold Medal and was awarded the coveted 1st Maharashtra Champion Title Belt at the state championship.",
-    badge: "Title Belt & Gold",
-  },
-  {
-    year: "2019",
-    title: "MASA India Mentor Award",
-    issuer: "Martial Arts & Sports Association (MASA India)",
-    category: "Mentorship Honor",
-    description:
-      "Conferred for outstanding dedication to mentoring and developing thousands of grassroots athletes and combat practitioners across India.",
-    badge: "Mentor of the Year",
   },
   {
     year: "2020",
@@ -307,31 +235,22 @@ export const achievements = [
     badge: "National Honor",
   },
   {
-    year: "2018",
-    title: "Youth Inspiration Award (Sakal In)",
-    issuer: "Sakal Media Group",
-    category: "State Award",
+    year: "2019",
+    title: "Bharat Ratna Atal Rashtriya Gaurav Puraskar",
+    issuer: "National Pride Excellence Award, Madhya Pradesh",
+    category: "Civic Honor",
     description:
-      "Recognized by Sakal Media as one of Maharashtra's foremost youth icons, overcoming orphan student hardship to win on the world stage.",
-    badge: "Youth Icon Award",
+      "Prestigious national citation conferred in Madhya Pradesh for distinguished contributions to Indian sports, national pride, and youth inspiration.",
+    badge: "National Pride Award",
   },
   {
-    year: "2017",
-    title: "Symbiosis International Sports Tournament Silver Medal",
-    issuer: "Symbiosis International University",
-    category: "International Tournament",
+    year: "2019",
+    title: "MASA India Mentor Award",
+    issuer: "Martial Arts & Sports Association (MASA India)",
+    category: "Mentorship Honor",
     description:
-      "Fought through intense rounds against international contenders to secure the Silver Medal at the international university tournament.",
-    badge: "Silver Medal",
-  },
-  {
-    year: "Championship",
-    title: "Mrutunjay Fight Club Open India Championship Gold Medalist",
-    issuer: "All India Fight Club Federation",
-    category: "National Championship",
-    description:
-      "Secured the Gold Medal in open combat at the prestigious all-India championship fight circuit.",
-    badge: "All-India Gold",
+      "Conferred for outstanding dedication to mentoring and developing thousands of grassroots athletes and combat practitioners across India.",
+    badge: "Mentor of the Year",
   },
   {
     year: "2018 – 2019",
@@ -341,6 +260,42 @@ export const achievements = [
     description:
       "Conferred with Banjara Ratna Award (2018), Banjara Samaj Bhushan Puraskar (2019), and Banjara Krida Bhushan Award (2019) for sports valor.",
     badge: "Krida Bhushan",
+  },
+  {
+    year: "2018",
+    title: "London Book of World Records",
+    issuer: "London Book of World Records",
+    category: "World Record",
+    description:
+      "Officially entered into the London Book of World Records in recognition of extraordinary athletic endurance and martial arts mastery.",
+    badge: "World Record Holder",
+  },
+  {
+    year: "2018",
+    title: "Asian Book of World Records",
+    issuer: "Asian Book of World Records",
+    category: "World Record",
+    description:
+      "Inscribed into the Asian Book of World Records for continental-scale combat performance and exemplary physical discipline.",
+    badge: "Asian Record",
+  },
+  {
+    year: "2018",
+    title: "Bharat Book of World Records",
+    issuer: "Bharat Book of World Records",
+    category: "World Record",
+    description:
+      "Inducted into the Bharat Book of World Records, honoring an orphan student who rose to become a national inspiration.",
+    badge: "National Record",
+  },
+  {
+    year: "2018",
+    title: "Youth Inspiration Award (Sakal In)",
+    issuer: "Sakal Media Group",
+    category: "State Award",
+    description:
+      "Recognized by Sakal Media as one of Maharashtra's foremost youth icons, overcoming orphan student hardship to win on the world stage.",
+    badge: "Youth Icon Award",
   },
   {
     year: "2018",
@@ -361,6 +316,33 @@ export const achievements = [
     badge: "Sports Citation",
   },
   {
+    year: "2017 – 2018",
+    title: "O-Sport World Champion Gold Medalist",
+    issuer: "World O-Sport Federation",
+    category: "World Championship",
+    description:
+      "Crowned World Champion with a Gold Medal on the global stage, marking an apex victory in international combat sports history.",
+    badge: "World Champion Gold",
+  },
+  {
+    year: "2017",
+    title: "International UFI Kick Boxing Champion Gold Medalist",
+    issuer: "Universal Fight Industry (UFI)",
+    category: "International Championship",
+    description:
+      "Won the Gold Medal at the International UFI Kickboxing Championship, overpowering elite international competitors in the ring.",
+    badge: "International Gold",
+  },
+  {
+    year: "2017",
+    title: "Symbiosis International Sports Tournament Silver Medal",
+    issuer: "Symbiosis International University",
+    category: "International Tournament",
+    description:
+      "Fought through intense rounds against international contenders to secure the Silver Medal at the international university tournament.",
+    badge: "Silver Medal",
+  },
+  {
     year: "2015",
     title: "Instructor of the Year — ICMAS",
     issuer: "International Combat Martial Art Society",
@@ -370,13 +352,22 @@ export const achievements = [
     badge: "Instructor of the Year",
   },
   {
-    year: "Credential",
-    title: "Grappling National Referee",
-    issuer: "National Grappling Federation of India",
-    category: "Officiating Credential",
+    year: "2014",
+    title: "Mrutunjay Fight Club Open India Championship Gold Medalist",
+    issuer: "All India Fight Club Federation",
+    category: "National Championship",
     description:
-      "Officially certified as a National Referee for national and state grappling bouts and combat tournaments.",
-    badge: "National Referee",
+      "Secured the Gold Medal in open combat at the prestigious all-India championship fight circuit.",
+    badge: "All-India Gold",
+  },
+  {
+    year: "2013",
+    title: "1st Maharashtra Champion Title Belt (Mrutunjay Fight Club)",
+    issuer: "Mrutunjay Fight Club, Maharashtra",
+    category: "State Championship",
+    description:
+      "Secured the Gold Medal and was awarded the coveted 1st Maharashtra Champion Title Belt at the state championship.",
+    badge: "Title Belt & Gold",
   },
   {
     year: "Credentials",
@@ -386,6 +377,15 @@ export const achievements = [
     description:
       "Holder of Black Belt Kickboxing (3rd Dan Degree), Kickboxing Diploma, and completed the high-altitude International Kickboxing Training Camp at Ooty (WAKO India).",
     badge: "3rd Dan Black Belt",
+  },
+  {
+    year: "Credential",
+    title: "Grappling National Referee",
+    issuer: "National Grappling Federation of India",
+    category: "Officiating Credential",
+    description:
+      "Officially certified as a National Referee for national and state grappling bouts and combat tournaments.",
+    badge: "National Referee",
   },
 ];
 

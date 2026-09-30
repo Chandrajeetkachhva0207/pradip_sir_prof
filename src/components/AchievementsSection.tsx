@@ -24,15 +24,23 @@ export function AchievementsSection() {
     if (activeFilter === "awards") {
       return (
         item.category === "National Award" ||
+        item.category === "National Honor" ||
         item.category === "State Honor" ||
-        item.category === "Civic Honor"
+        item.category === "Civic Honor" ||
+        item.category === "Mentorship Honor" ||
+        item.category === "Community Honor" ||
+        item.category === "State Award" ||
+        item.category === "Life Achievement" ||
+        item.category === "Sports Honor"
       );
     }
     if (activeFilter === "martial-arts") {
       return (
-        item.category === "Championship" ||
-        item.category === "Martial Arts Honor" ||
-        item.category === "Credentials"
+        item.category.includes("Championship") ||
+        item.category.includes("Tournament") ||
+        item.category.includes("Credential") ||
+        item.category.includes("Rank") ||
+        item.category === "Global Citation"
       );
     }
     return true;
