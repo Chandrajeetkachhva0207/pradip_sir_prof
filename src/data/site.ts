@@ -451,7 +451,7 @@ export const ventures = [
     id: "samsy-wellness",
     title: "Samsy Wellness Network",
     category: "Health & Preventative Wellness",
-    image: "/images/samsy-wellness.jpg",
+    image: "/images/samsy-wellness.png",
     role: "Founder & Visionary",
     tagline: "Empowering everyday vitality through community wellness & holistic health",
     description:
@@ -485,7 +485,7 @@ export const ventures = [
     id: "hope-foundation",
     title: "Hope Multipurpose Foundation",
     category: "Social Impact & Community Empowerment",
-    image: "/images/hope-foundation.jpg",
+    image: "/images/hope-foundation.png",
     role: "Founder & Managing Trustee",
     tagline: "Empowering orphan students, underprivileged youth & grassroots communities",
     description:
@@ -592,42 +592,93 @@ export const galleryItems = [
     title: "Keynote Address at Global Leadership Summit",
     category: "Keynotes",
     image: "/images/founder-keynote.jfif",
-    caption: "Addressing over 3,000 founders and corporate executives on athletic resilience in business.",
+    caption:
+      "Addressing over 3,000 founders and corporate executives on athletic resilience in business.",
   },
+
   {
     id: "g2",
     title: "Executive Portraiture — Head of Samsy Group",
     category: "Ventures",
     image: "/images/founder-keynote_main.jpg",
-    caption: "At the corporate headquarters of Samsy Uni Private Limited.",
+    caption:
+      "At the corporate headquarters of Samsy Uni Private Limited.",
   },
+
   {
     id: "g3",
     title: "Combat Sports & Martial Arts Roots",
     category: "Athletics",
     image: "/images/founder-athlete.jpg",
-    caption: "Gold medal victory celebrating combat sports triumph and national pride representing India.",
+    caption:
+      "Gold medal victory celebrating combat sports triumph and national pride representing India.",
   },
-  {
-    id: "g4",
-    title: "Samsy Innovation & Experience Center",
-    category: "Ventures",
-    image: "/images/founder-ventures.jpg",
-    caption: "Architectural flagship hub combining wellness consultation and partner collaboration.",
-  },
+
+  // {
+  //   id: "g4",
+  //   title: "Samsy Innovation & Experience Center",
+  //   category: "Ventures",
+  //   image: "/images/founder-ventures.jpg",
+  //   caption:
+  //     "Architectural flagship hub combining wellness consultation and partner collaboration.",
+  // },
+
   {
     id: "g5",
     title: "Leadership Bootcamps with 500+ Mentees",
     category: "Mentorship",
     image: "/images/founder.jpg",
-    caption: "Hosting an interactive masterclass on self-discipline and financial independence.",
+    caption:
+      "Hosting an interactive masterclass on self-discipline and financial independence.",
   },
+
   {
     id: "g6",
     title: "Swamy Naik Banjara Ratna National Award",
     category: "Awards",
     image: "/images/founder-award.png",
-    caption: "Conferred with the prestigious Swamy Naik Banjara Ratna National Award in Telangana for distinguished contributions to Indian sports and youth leadership.",
+    caption:
+      "Conferred with the Swamy Naik Banjara Ratna National Award in Telangana for distinguished contributions to Indian sports and youth leadership.",
+  },
+
+  /* =========================
+     MEDIA / NEWSPAPER FEATURES
+     ========================= */
+
+  {
+    id: "g7",
+    title: "Vanchit Gavkari — Inspirational Journey",
+    category: "Media",
+    image: "/images/pradip-newspaper-1.png",
+    caption:
+      "A newspaper feature highlighting Pradip Divansing Jadhav's journey from a young athlete to an internationally recognized sports and business personality.",
+  },
+
+  {
+    id: "g8",
+    title: "Gor-Mati News — Journey of Success",
+    category: "Media",
+    image: "/images/pradip-newspaper-2.png",
+    caption:
+      "A media feature covering Pradip Jadhav's inspirational journey, leadership, entrepreneurship, sports achievements, and social initiatives.",
+  },
+
+  {
+    id: "g9",
+    title: "Vanchit Gavkari — Sports & National Recognition",
+    category: "Media",
+    image: "/images/pradip-newspaper-3.png",
+    caption:
+      "A feature documenting achievements in international sports, national recognition, entrepreneurship, and social impact initiatives.",
+  },
+
+  {
+    id: "g10",
+    title: "A Day That Will Always Remain Special",
+    category: "Media",
+    image: "/images/pradip-newspaper-4.png",
+    caption:
+      "A personal journey of gratitude, dreams, purpose, and the mentor who supported Pradip Jadhav during his journey.",
   },
 ];
 
