@@ -59,11 +59,10 @@ export function AchievementsSection() {
                 key={f.id}
                 onClick={() => setActiveFilter(f.id)}
                 type="button"
-                className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
-                  isActive
-                    ? "border border-gold bg-gold text-primary shadow-md shadow-gold/25"
+                className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${isActive
+                    ? "border border-gold bg-gold text-navy shadow-md shadow-gold/25"
                     : "border border-border bg-card/60 text-muted-foreground hover:border-gold/40 hover:text-foreground"
-                }`}
+                  }`}
               >
                 {f.label}
               </button>

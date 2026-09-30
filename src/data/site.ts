@@ -469,7 +469,7 @@ export const ventures = [
     id: "samsy-uni",
     title: "Samsy Uni Private Limited",
     category: "IT Solutions & Enterprise Software",
-    image: "/images/founder-keynote.png",
+    image: "/images/founder-keynote.jfif",
     role: "Founder & Managing Director",
     tagline: "Enterprise software, cloud systems & multi-utility IT solutions",
     description:
@@ -592,7 +592,7 @@ export const galleryItems = [
     id: "g1",
     title: "Keynote Address at Global Leadership Summit",
     category: "Keynotes",
-    image: "/images/founder-keynote.png",
+    image: "/images/founder-keynote.jfif",
     caption: "Addressing over 3,000 founders and corporate executives on athletic resilience in business.",
   },
   {

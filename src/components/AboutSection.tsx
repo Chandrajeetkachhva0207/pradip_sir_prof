@@ -34,7 +34,7 @@ export function AboutSection() {
 
               <div className="zoom-frame relative overflow-hidden rounded-3xl border border-gold/30 bg-card shadow-2xl shadow-primary/10">
                 <img
-                  src="/images/founder-athlete.png"
+                  src="/images/founder.jpg"
                   alt="Pradip Divansing Jadhav — O-Sport World Champion & 3rd Dan Black Belt"
                   className="h-[700px] w-full object-cover object-center"
                   loading="lazy"

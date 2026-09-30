@@ -59,10 +59,10 @@ export function HeroSection() {
             >
               <a
                 href="#journey"
-                className="group inline-flex items-center justify-center gap-3 rounded-full border border-gold bg-gradient-to-r from-gold via-amber-400 to-gold px-7 py-3.5 text-xs font-semibold tracking-widest text-primary uppercase shadow-lg shadow-gold/25 transition-all duration-300 hover:scale-[1.03] hover:shadow-gold"
+                className="group inline-flex items-center justify-center gap-3 rounded-full border border-gold bg-gradient-to-r from-gold via-amber-400 to-gold px-7 py-3.5 text-xs font-semibold tracking-widest text-navy uppercase shadow-lg shadow-gold/25 transition-all duration-300 hover:scale-[1.03] hover:shadow-gold"
               >
                 <span>Explore My Journey</span>
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-4 text-navy transition-transform group-hover:translate-x-1" />
               </a>
 
               <a

@@ -31,11 +31,10 @@ export function GallerySection() {
               key={cat}
               type="button"
               onClick={() => setSelectedCategory(cat)}
-              className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
-                selectedCategory === cat
-                  ? "border border-gold bg-gold text-primary shadow-md shadow-gold/20"
+              className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${selectedCategory === cat
+                  ? "border border-gold bg-gold text-navy shadow-md shadow-gold/20"
                   : "border border-border bg-card text-muted-foreground hover:border-gold/40 hover:text-foreground"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -50,13 +49,13 @@ export function GallerySection() {
                 onClick={() => setActiveImage(item)}
                 className="surface-card group relative cursor-pointer overflow-hidden rounded-2xl border border-border/70 transition-all duration-500 hover:border-gold/60 hover:shadow-gold"
               >
-                <div className="zoom-frame relative aspect-4/3 w-full overflow-hidden bg-card">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
+                <div className="zoom-frame relative aspect-[4/3] w-full overflow-hidden bg-card">
+  <img
+    src={item.image}
+    alt={item.title}
+    className="size-full object-contain object-center transition-transform duration-700"
+    loading="lazy"
+  />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
 
                   {/* Zoom indicator on hover */}
