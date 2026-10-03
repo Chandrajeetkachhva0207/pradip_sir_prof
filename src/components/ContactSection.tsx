@@ -7,6 +7,8 @@ import {
   CheckCircle2,
   AlertCircle,
   Linkedin,
+  Instagram,
+  Twitter,
   Sparkles,
   Copy,
   Check,
@@ -276,16 +278,44 @@ export function ContactSection() {
                     Official Leadership Profiles
                   </p>
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-3">
+
+                    {/* LinkedIn */}
                     <a
                       href={founder.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn Profile"
+                      title="LinkedIn"
                       className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
                     >
                       <Linkedin className="size-4" />
                     </a>
+
+                    {/* Instagram */}
+                    <a
+                      href="https://www.instagram.com/pradipjadhav_1/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram Profile"
+                      title="Instagram"
+                      className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
+                    >
+                      <Instagram className="size-4" />
+                    </a>
+
+                    {/* X / Twitter */}
+                    <a
+                      href="https://x.com/pradipdjadhav"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X Profile"
+                      title="X"
+                      className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border bg-card/60 text-foreground transition-all hover:border-gold hover:bg-gold hover:text-primary-foreground"
+                    >
+                      <Twitter className="size-4" />
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -572,11 +602,10 @@ export function ContactSection() {
                                 subject: topic,
                               })
                             }
-                            className={`max-w-full rounded-lg px-2.5 py-1 text-left text-xs transition-all ${
-                              formData.subject === topic
+                            className={`max-w-full rounded-lg px-2.5 py-1 text-left text-xs transition-all ${formData.subject === topic
                                 ? "bg-gold font-medium text-primary-foreground shadow-sm"
                                 : "border border-border bg-card/70 text-muted-foreground hover:border-gold/50 hover:text-foreground"
-                            }`}
+                              }`}
                           >
                             <span className="break-words">{topic}</span>
                           </button>
