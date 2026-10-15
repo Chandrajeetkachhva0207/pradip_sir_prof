@@ -17,8 +17,12 @@ export function SiteFooter() {
           {/* Column 1: Brand & Executive Summary */}
           <div className="lg:col-span-4 space-y-5">
             <div className="flex items-center gap-3.5">
-              <div className="flex size-10 items-center justify-center rounded-full border border-gold/40 bg-card/80 text-gold shadow-md">
-                <span className="font-display text-sm font-semibold tracking-wider">PDJ</span>
+              <div className="flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-gold/50 bg-card/80 shadow-md shadow-gold/10">
+                <img
+                  src="/images/pradip-profile.jpg?v=2"
+                  alt="Pradip Divansing Jadhav"
+                  className="size-full object-cover object-top"
+                />
               </div>
               <div>
                 <span className="block font-display text-xl font-semibold tracking-wide text-foreground">

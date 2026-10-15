@@ -598,11 +598,11 @@ export const galleryItems = [
 
   {
     id: "g2",
-    title: "Executive Portraiture — Head of Samsy Group",
+    title: "Official Executive Portrait — Founder & Visionary",
     category: "Ventures",
-    image: "/images/founder-keynote_main.jpg",
+    image: "/images/pradip-profile.jpg",
     caption:
-      "At the corporate headquarters of Samsy Uni Private Limited.",
+      "Executive portrait of Pradip Divansing Jadhav — Founder of Samsy Wellness Network and Samsy Uni Private Limited.",
   },
 
   {

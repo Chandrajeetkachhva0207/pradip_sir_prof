@@ -65,7 +65,7 @@ function About() {
           <Reveal className="relative">
             <div className="zoom-frame overflow-hidden rounded-3xl border border-gold/30 bg-card shadow-2xl">
               <img
-                src="/images/founder-portrait.jpg"
+                src="/images/founder-portrait.jpg?v=2"
                 alt="Pradip Divansing Jadhav"
                 loading="eager"
                 className="aspect-4/5 w-full object-cover object-top"

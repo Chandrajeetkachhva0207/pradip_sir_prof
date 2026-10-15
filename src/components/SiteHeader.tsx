@@ -82,12 +82,13 @@ export function SiteHeader() {
           className="group flex shrink-0 items-center gap-3 transition-transform duration-300 hover:scale-[1.02]"
           onClick={() => setOpen(false)}
         >
-          <div className="relative flex size-10 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-card/80 text-gold shadow-md shadow-gold/10 transition-colors group-hover:border-gold">
-            <span className="font-display text-sm font-semibold tracking-wider">
-              PDJ
-            </span>
-
-            <span className="absolute -inset-0.5 rounded-full border border-gold/20 opacity-0 transition-opacity group-hover:opacity-100" />
+          <div className="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-gold/50 bg-card/80 shadow-md shadow-gold/10 transition-transform duration-300 group-hover:scale-105 group-hover:border-gold">
+            <img
+              src="/images/pradip-profile.jpg?v=2"
+              alt="Pradip Divansing Jadhav"
+              className="size-full object-cover object-top"
+            />
+            <span className="absolute -inset-0.5 rounded-full border border-gold/30 opacity-0 transition-opacity group-hover:opacity-100" />
           </div>
 
           <div className="min-w-0">
